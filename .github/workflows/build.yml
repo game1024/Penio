@@ -22,6 +22,8 @@ jobs:
             args: ''
           - platform: 'ubuntu-24.04'
             args: ''
+          - platform: 'ubuntu-24.04-arm64'
+            args: ''
 
 
     runs-on: ${{ matrix.platform }}
