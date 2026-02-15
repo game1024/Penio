@@ -184,7 +184,7 @@ function 关于页面() {
                         />
                     </IconButton>
                 </Tooltip>
-                                <Tooltip title="GitHub" arrow>
+                <Tooltip title="GitHub" arrow>
                     <IconButton
                         onClick={handleGithubClick}
                         sx={{
@@ -206,6 +206,23 @@ function 关于页面() {
                         />
                     </IconButton>
                 </Tooltip>
+                <Tooltip title={t('about.contactUs')} arrow>
+                    <IconButton
+                        onClick={handleEmailClick}
+                        sx={{
+                            width: '3rem',
+                            height: '3rem',
+                            backgroundColor: '#E3F2FD',
+                            border: '1px solid #BBDEFB',
+                            '&:hover': {
+                                backgroundColor: '#BBDEFB',
+                                border: '1px solid #2196F3',
+                            },
+                        }}
+                    >
+                        <EmailIcon sx={{ fontSize: '1.5rem', color: '#1976D2' }} />
+                    </IconButton>
+                </Tooltip>
             </Stack>
 
             {/* 操作按钮 */}
@@ -221,20 +238,6 @@ function 关于页面() {
                     }}
                 >
                     {t('about.visitWebsite')}
-                </Button>
-
-                {/* 反馈邮箱 */}
-                <Button
-                    variant="outlined"
-                    startIcon={<EmailIcon />}
-                    onClick={handleEmailClick}
-                    sx={{
-                        py: 1.5,
-                        borderRadius: 2,
-                        textTransform: "none",
-                    }}
-                >
-                    {t('about.contactUs')}
                 </Button>
 
                 {/* 复制软件信息 */}
