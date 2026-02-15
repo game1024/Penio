@@ -127,7 +127,7 @@
   "tray": {
     "preferences": "환경설정",
     "resetWindow": "창 초기화",
-    "website": "웹사이트",
+    "website": "GitHub",
     "version": "버전 {{version}}",
     "restart": "재시작",
     "quit": "종료"

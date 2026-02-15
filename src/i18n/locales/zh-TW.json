@@ -125,7 +125,7 @@
   "tray": {
     "preferences": "偏好設定",
     "resetWindow": "重設視窗",
-    "website": "官網",
+    "website": "GitHub",
     "version": "版本 {{version}}",
     "restart": "重新啟動應用程式",
     "quit": "結束"  },

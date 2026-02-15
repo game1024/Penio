@@ -127,7 +127,7 @@
   "tray": {
     "preferences": "偏好设置",
     "resetWindow": "重置窗口",
-    "website": "官网",
+    "website": "GitHub",
     "version": "版本 {{version}}",
     "restart": "重启应用",
     "quit": "退出"

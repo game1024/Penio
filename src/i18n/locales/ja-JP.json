@@ -127,7 +127,7 @@
   "tray": {
     "preferences": "環境設定",
     "resetWindow": "ウィンドウをリセット",
-    "website": "ウェブサイト",
+    "website": "GitHub",
     "version": "バージョン {{version}}",
     "restart": "再起動",
     "quit": "終了"

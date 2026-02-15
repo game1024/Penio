@@ -125,7 +125,7 @@
   "tray": {
     "preferences": "Einstellungen",
     "resetWindow": "Fenster zurücksetzen",
-    "website": "Website",
+    "website": "GitHub",
     "version": "Version {{version}}",
     "restart": "Neustart",
     "quit": "Beenden"
