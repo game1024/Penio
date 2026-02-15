@@ -1,4 +1,8 @@
 <p align="center">
+  <a href="README.md">简体中文</a> | <a href="README_EN.md">English</a> | <a href="README_JA.md">日本語</a> | <a href="README_KO.md">한국어</a> | <a href="README_FR.md">Français</a> | <a href="README_DE.md">Deutsch</a>
+</p>
+
+<p align="center">
   <img src="public/penio.png" alt="Penio Logo" width="120" height="120">
 </p>
 
@@ -13,12 +17,37 @@
 </p>
 
 <p align="center">
-  <a href="#功能特性">功能特性</a> •
-  <a href="#安装">安装</a> •
-  <a href="#使用">使用</a> •
-  <a href="#开发">开发</a> •
-  <a href="#贡献">贡献</a> •
-  <a href="#许可证">许可证</a>
+	
+  <img src="https://api.visitorbadge.io/api/visitors?path=game1024.penio&countColor=%234ecdc4">
+  <br/>
+    
+  <a href="https://github.com/game1024/Penio/stargazers">
+    <img src="https://img.shields.io/github/stars/game1024/Penio?style=for-the-badge&color=yellow" alt="GitHub Stars">
+  </a>
+
+  <img src="https://img.shields.io/github/forks/game1024/Penio?style=for-the-badge&color=8a2be2" alt="GitHub Forks">
+
+  <a href="https://github.com/game1024/Penio/issues">
+    <img src="https://img.shields.io/github/issues-raw/game1024/Penio?style=for-the-badge&label=Issues&color=orange" alt="Github Issues">
+  </a>
+  <br/>  
+  
+  <a href="https://github.com/game1024/Penio/releases">
+    <img src="https://img.shields.io/github/downloads/game1024/Penio/total?style=for-the-badge" alt="Downloads">
+  </a>
+  <a href="https://github.com/game1024/Penio/releases">
+    <img src="https://img.shields.io/github/v/release/game1024/Penio?style=for-the-badge&color=brightgreen" alt="Version">
+  </a>
+  <a href="https://github.com/game1024/Penio">
+    <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightblue?style=for-the-badge" alt="Platform">
+  </a>
+  <br/>
+  
+  <a href="https://github.com/game1024/Penio/commits">
+    <img src="https://img.shields.io/github/commit-activity/m/game1024/Penio?style=for-the-badge" alt="提交活跃度">
+  </a>
+  <img src="https://img.shields.io/badge/language-TypeScript%20%7C%20Rust-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge">
 </p>
 
 ---
@@ -95,23 +124,6 @@
 - **macOS**: `Penio_x.x.x_aarch64.dmg` 或 `Penio_x.x.x_x64.dmg`
 - **Linux**: `Penio_x.x.x_amd64.deb` 或 `Penio_x.x.x_amd64.AppImage`
 
-### 从源码构建
-
-```bash
-# 克隆仓库
-git clone https://github.com/game1024/Penio.git
-cd Penio
-
-# 安装依赖
-bun install
-
-# 开发模式运行
-bun run tauri dev
-
-# 构建生产版本
-bun run tauri build
-```
-
 ---
 
 ## 🚀 使用
@@ -137,15 +149,6 @@ bun run tauri build
 
 ## 🛠️ 开发
 
-### 技术栈
-
-- **前端**: React + TypeScript + Vite
-- **UI 框架**: Material-UI
-- **桌面框架**: Tauri 2.0
-- **后端**: Rust
-- **绘图引擎**: Excalidraw
-- **动画**: Mo.js
-- **事件监听**：rdev
 
 ### 开发环境要求
 
@@ -161,8 +164,8 @@ bun run tauri build
 
 ```
 penio/
-├── src/                      # 前端源码
-│   ├── components/          # React 组件
+├── src/                    # 前端源码
+│   ├── components/         # React 组件
 │   ├── hooks/              # 自定义 Hooks
 │   ├── i18n/               # 国际化
 │   ├── pages/              # 页面
@@ -175,18 +178,6 @@ penio/
 ├── docs/                   # 文档和演示视频
 └── public/                 # 静态资源
 ```
-
-### 贡献指南
-
-欢迎贡献代码、报告问题或提出建议！
-
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
-
----
 
 ## 📄 许可证
 
@@ -202,6 +193,13 @@ penio/
 - [Material-UI](https://mui.com/) - React UI 组件库
 - [rdev](https://github.com/Narsil/rdev) - Rust 事件监听
 
+## 🎁 请我杯咖啡
+如果觉得这个项目对你有帮助，请给个 ⭐️ Star 支持一下！
+
+|名称|介绍|备注|
+|-|-|-|
+|365VPN|我用过最稳定的，不限流的全系统VPN|[体验地址](https://ref.365tz87989.com/?r=RWQVZD)|
+
 ---
 
 ## 📮 联系方式
@@ -213,6 +211,3 @@ penio/
 
 ---
 
-<p align="center">
-  如果觉得这个项目对你有帮助，请给个 ⭐️ Star 支持一下！
-</p>
