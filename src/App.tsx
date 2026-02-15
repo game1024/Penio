@@ -121,7 +121,7 @@ function App() {
   
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    setTabno(params.get('tabno') ? parseInt(params.get('tabno')!) : 0);
+    setTabno(params.get('tabno') ? parseInt(params.get('tabno')!) : 1);
 
     // 禁用生产环境的右键菜单 
     // macOS: 生产环境的协议是 tauri:
