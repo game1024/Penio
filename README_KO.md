@@ -52,6 +52,41 @@
 
 ---
 
+## 📦 설치
+
+### 설치 프로그램 다운로드
+
+[Releases](https://github.com/game1024/Penio/releases) 페이지에서 운영 체제에 맞는 설치 프로그램을 다운로드하세요:
+
+- **Windows**: 
+  
+  <a href="https://get.microsoft.com/installer/download/9ppjv6gkgsg1?referrer=appbadge" target="_self">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  </a>
+
+- **macOS**:
+  - Apple Silicon (M1/M2/M3 등): `Penio_x.x.x_aarch64.dmg`
+  - Intel 칩: `Penio_x.x.x_x64.dmg`
+- **Linux**:
+  - ARM 칩: `Penio_x.x.x_aarch64.deb` / `Penio_x.x.x_aarch64.AppImage` / `Penio_x.x.x_aarch64.rpm`
+  - x64 칩: `Penio_x.x.x_amd64.deb` / `Penio_x.x.x_amd64.AppImage` / `Penio_x.x.x_amd64.rpm`
+
+---
+
+## 🚀 사용법
+
+### 기본 조작
+
+1. **앱 실행**: 앱이 시스템 트레이로 최소화됩니다
+2. **설정 열기**: 트레이 아이콘 → 설정
+3. **기능 활성화**:
+   - "마우스" 탭에서 클릭 효과 활성화
+   - "키보드" 탭에서 키보드 에코 활성화
+   - "그리기" 탭에서 단축키 설정
+4. **사용 시작**: 단축키를 눌러 화면에 그리기 시작
+
+---
+
 ## ✨ 기능
 
 ### 🎨 화면 그리기
@@ -111,39 +146,6 @@
 - ✅ **사용자 정의 스타일**: 색상, 크기, 속도 등의 매개변수 조정 가능
 - ✅ **자동 시작**: 시스템 부팅 시 자동 시작 설정 가능
 - ✅ **시스템 트레이**: 시스템 트레이로 최소화하여 언제든 접근 가능
-
----
-
-## 📦 설치
-
-### 설치 프로그램 다운로드
-
-[Releases](https://github.com/game1024/Penio/releases) 페이지에서 운영 체제에 맞는 설치 프로그램을 다운로드하세요:
-
-- **Windows**: `Penio_x.x.x_x64_en-US.msi`
-- **macOS**: `Penio_x.x.x_aarch64.dmg` 또는 `Penio_x.x.x_x64.dmg`
-- **Linux**: `Penio_x.x.x_amd64.deb` 또는 `Penio_x.x.x_amd64.AppImage`
-
----
-
-## 🚀 사용법
-
-### 단축키
-
-기본 단축키 (설정에서 사용자 정의 가능):
-
-- **그리기 모드 전환**: `Ctrl+Shift+D` (Windows/Linux) / `Cmd+Shift+D` (macOS)
-- **메인 창 표시/숨기기**: 시스템 트레이 아이콘 클릭
-
-### 기본 조작
-
-1. **앱 실행**: 앱이 시스템 트레이로 최소화됩니다
-2. **설정 열기**: 트레이 아이콘 → 설정
-3. **기능 활성화**:
-   - "마우스" 탭에서 클릭 효과 활성화
-   - "키보드" 탭에서 키보드 에코 활성화
-   - "그리기" 탭에서 단축키 설정
-4. **사용 시작**: 단축키를 눌러 화면에 그리기 시작
 
 ---
 

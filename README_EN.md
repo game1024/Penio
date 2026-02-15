@@ -52,6 +52,41 @@
 
 ---
 
+## 📦 Installation
+
+### Download Installer
+
+Visit the [Releases](https://github.com/game1024/Penio/releases) page to download the installer for your operating system:
+
+- **Windows**: 
+  
+  <a href="https://get.microsoft.com/installer/download/9ppjv6gkgsg1?referrer=appbadge" target="_self">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  </a>
+
+- **macOS**:
+  - Apple Silicon (M1/M2/M3, etc.): `Penio_x.x.x_aarch64.dmg`
+  - Intel chips: `Penio_x.x.x_x64.dmg`
+- **Linux**:
+  - ARM chips: `Penio_x.x.x_aarch64.deb` / `Penio_x.x.x_aarch64.AppImage` / `Penio_x.x.x_aarch64.rpm`
+  - x64 chips: `Penio_x.x.x_amd64.deb` / `Penio_x.x.x_amd64.AppImage` / `Penio_x.x.x_amd64.rpm`
+
+---
+
+## 🚀 Usage
+
+### Basic Operations
+
+1. **Launch App**: The app minimizes to the system tray
+2. **Open Settings**: Click tray icon → Settings
+3. **Enable Features**:
+   - Enable click effects in the "Mouse" tab
+   - Enable keyboard echo in the "Keyboard" tab
+   - Configure shortcuts in the "Drawing" tab
+4. **Start Using**: Press the shortcut to start drawing on screen
+
+---
+
 ## ✨ Features
 
 ### 🎨 Screen Drawing
@@ -111,39 +146,6 @@ Supports Chinese (Simplified/Traditional), English, Japanese, Korean, French, Ge
 - ✅ **Customizable Styles**: Adjust colors, sizes, speeds, and other parameters
 - ✅ **Auto-Start**: Optional auto-start on system boot
 - ✅ **System Tray**: Minimize to system tray for easy access
-
----
-
-## 📦 Installation
-
-### Download Installer
-
-Visit the [Releases](https://github.com/game1024/Penio/releases) page to download the installer for your operating system:
-
-- **Windows**: `Penio_x.x.x_x64_en-US.msi`
-- **macOS**: `Penio_x.x.x_aarch64.dmg` or `Penio_x.x.x_x64.dmg`
-- **Linux**: `Penio_x.x.x_amd64.deb` or `Penio_x.x.x_amd64.AppImage`
-
----
-
-## 🚀 Usage
-
-### Keyboard Shortcuts
-
-Default shortcuts (customizable in settings):
-
-- **Toggle Drawing Mode**: `Ctrl+Shift+D` (Windows/Linux) / `Cmd+Shift+D` (macOS)
-- **Show/Hide Main Window**: Click system tray icon
-
-### Basic Operations
-
-1. **Launch App**: The app minimizes to the system tray
-2. **Open Settings**: Click tray icon → Settings
-3. **Enable Features**:
-   - Enable click effects in the "Mouse" tab
-   - Enable keyboard echo in the "Keyboard" tab
-   - Configure shortcuts in the "Drawing" tab
-4. **Start Using**: Press the shortcut to start drawing on screen
 
 ---
 

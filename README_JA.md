@@ -52,6 +52,41 @@
 
 ---
 
+## 📦 インストール
+
+### インストーラーのダウンロード
+
+[Releases](https://github.com/game1024/Penio/releases) ページからお使いのOSに合ったインストーラーをダウンロードしてください：
+
+- **Windows**: 
+  
+  <a href="https://get.microsoft.com/installer/download/9ppjv6gkgsg1?referrer=appbadge" target="_self">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  </a>
+
+- **macOS**:
+  - Apple Silicon (M1/M2/M3など): `Penio_x.x.x_aarch64.dmg`
+  - Intelチップ: `Penio_x.x.x_x64.dmg`
+- **Linux**:
+  - ARMチップ: `Penio_x.x.x_aarch64.deb` / `Penio_x.x.x_aarch64.AppImage` / `Penio_x.x.x_aarch64.rpm`
+  - x64チップ: `Penio_x.x.x_amd64.deb` / `Penio_x.x.x_amd64.AppImage` / `Penio_x.x.x_amd64.rpm`
+
+---
+
+## 🚀 使い方
+
+### 基本操作
+
+1. **アプリ起動**：システムトレイに最小化されます
+2. **設定を開く**：トレイアイコン → 設定
+3. **機能を有効にする**：
+   - 「マウス」タブでクリックエフェクトを有効化
+   - 「キーボード」タブでキーボードエコーを有効化
+   - 「描画」タブでショートカットを設定
+4. **使用開始**：ショートカットを押して画面上に描画
+
+---
+
 ## ✨ 機能
 
 ### 🎨 画面描画
@@ -111,39 +146,6 @@
 - ✅ **スタイルカスタマイズ**：色、サイズ、速度などのパラメータを調整可能
 - ✅ **自動起動**：システム起動時に自動起動を設定可能
 - ✅ **システムトレイ**：システムトレイに最小化していつでもアクセス
-
----
-
-## 📦 インストール
-
-### インストーラーのダウンロード
-
-[Releases](https://github.com/game1024/Penio/releases) ページからお使いのOSに合ったインストーラーをダウンロードしてください：
-
-- **Windows**: `Penio_x.x.x_x64_en-US.msi`
-- **macOS**: `Penio_x.x.x_aarch64.dmg` または `Penio_x.x.x_x64.dmg`
-- **Linux**: `Penio_x.x.x_amd64.deb` または `Penio_x.x.x_amd64.AppImage`
-
----
-
-## 🚀 使い方
-
-### ショートカットキー
-
-デフォルトのショートカット（設定でカスタマイズ可能）：
-
-- **描画モード切替**: `Ctrl+Shift+D` (Windows/Linux) / `Cmd+Shift+D` (macOS)
-- **メインウィンドウの表示/非表示**: システムトレイアイコンをクリック
-
-### 基本操作
-
-1. **アプリ起動**：システムトレイに最小化されます
-2. **設定を開く**：トレイアイコン → 設定
-3. **機能を有効にする**：
-   - 「マウス」タブでクリックエフェクトを有効化
-   - 「キーボード」タブでキーボードエコーを有効化
-   - 「描画」タブでショートカットを設定
-4. **使用開始**：ショートカットを押して画面上に描画
 
 ---
 

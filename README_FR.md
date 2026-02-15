@@ -52,6 +52,41 @@
 
 ---
 
+## 📦 Installation
+
+### Télécharger l'installateur
+
+Visitez la page [Releases](https://github.com/game1024/Penio/releases) pour télécharger l'installateur pour votre système d'exploitation :
+
+- **Windows** : 
+  
+  <a href="https://get.microsoft.com/installer/download/9ppjv6gkgsg1?referrer=appbadge" target="_self">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  </a>
+
+- **macOS** :
+  - Apple Silicon (M1/M2/M3, etc.) : `Penio_x.x.x_aarch64.dmg`
+  - Puces Intel : `Penio_x.x.x_x64.dmg`
+- **Linux** :
+  - Puces ARM : `Penio_x.x.x_aarch64.deb` / `Penio_x.x.x_aarch64.AppImage` / `Penio_x.x.x_aarch64.rpm`
+  - Puces x64 : `Penio_x.x.x_amd64.deb` / `Penio_x.x.x_amd64.AppImage` / `Penio_x.x.x_amd64.rpm`
+
+---
+
+## 🚀 Utilisation
+
+### Opérations de base
+
+1. **Lancer l'application** : L'application se minimise dans la barre des tâches
+2. **Ouvrir les paramètres** : Cliquez sur l'icône de la barre → Paramètres
+3. **Activer les fonctionnalités** :
+   - Activez les effets de clic dans l'onglet "Souris"
+   - Activez l'écho du clavier dans l'onglet "Clavier"
+   - Configurez les raccourcis dans l'onglet "Dessin"
+4. **Commencer à utiliser** : Appuyez sur le raccourci pour commencer à dessiner sur l'écran
+
+---
+
 ## ✨ Fonctionnalités
 
 ### 🎨 Dessin à l'écran
@@ -111,39 +146,6 @@ Supporte le chinois (simplifié/traditionnel), l'anglais, le japonais, le corée
 - ✅ **Styles personnalisables** : Ajustez les couleurs, tailles, vitesses et autres paramètres
 - ✅ **Démarrage automatique** : Option de démarrage automatique au boot du système
 - ✅ **Barre des tâches** : Minimisation dans la barre des tâches pour un accès facile
-
----
-
-## 📦 Installation
-
-### Télécharger l'installateur
-
-Visitez la page [Releases](https://github.com/game1024/Penio/releases) pour télécharger l'installateur pour votre système d'exploitation :
-
-- **Windows** : `Penio_x.x.x_x64_en-US.msi`
-- **macOS** : `Penio_x.x.x_aarch64.dmg` ou `Penio_x.x.x_x64.dmg`
-- **Linux** : `Penio_x.x.x_amd64.deb` ou `Penio_x.x.x_amd64.AppImage`
-
----
-
-## 🚀 Utilisation
-
-### Raccourcis clavier
-
-Raccourcis par défaut (personnalisables dans les paramètres) :
-
-- **Basculer le mode dessin** : `Ctrl+Shift+D` (Windows/Linux) / `Cmd+Shift+D` (macOS)
-- **Afficher/Masquer la fenêtre principale** : Cliquez sur l'icône de la barre des tâches
-
-### Opérations de base
-
-1. **Lancer l'application** : L'application se minimise dans la barre des tâches
-2. **Ouvrir les paramètres** : Cliquez sur l'icône de la barre → Paramètres
-3. **Activer les fonctionnalités** :
-   - Activez les effets de clic dans l'onglet "Souris"
-   - Activez l'écho du clavier dans l'onglet "Clavier"
-   - Configurez les raccourcis dans l'onglet "Dessin"
-4. **Commencer à utiliser** : Appuyez sur le raccourci pour commencer à dessiner sur l'écran
 
 ---
 

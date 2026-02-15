@@ -52,6 +52,41 @@
 
 ---
 
+## 📦 Installation
+
+### Installationsprogramm herunterladen
+
+Besuchen Sie die [Releases](https://github.com/game1024/Penio/releases)-Seite, um das Installationsprogramm für Ihr Betriebssystem herunterzuladen:
+
+- **Windows**: 
+  
+  <a href="https://get.microsoft.com/installer/download/9ppjv6gkgsg1?referrer=appbadge" target="_self">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  </a>
+
+- **macOS**:
+  - Apple Silicon (M1/M2/M3 usw.): `Penio_x.x.x_aarch64.dmg`
+  - Intel-Chips: `Penio_x.x.x_x64.dmg`
+- **Linux**:
+  - ARM-Chips: `Penio_x.x.x_aarch64.deb` / `Penio_x.x.x_aarch64.AppImage` / `Penio_x.x.x_aarch64.rpm`
+  - x64-Chips: `Penio_x.x.x_amd64.deb` / `Penio_x.x.x_amd64.AppImage` / `Penio_x.x.x_amd64.rpm`
+
+---
+
+## 🚀 Verwendung
+
+### Grundlegende Bedienung
+
+1. **App starten**: Die App minimiert sich in den Systemtray
+2. **Einstellungen öffnen**: Tray-Symbol klicken → Einstellungen
+3. **Funktionen aktivieren**:
+   - Klickeffekte im Tab "Maus" aktivieren
+   - Tastatur-Echo im Tab "Tastatur" aktivieren
+   - Shortcuts im Tab "Zeichnung" konfigurieren
+4. **Loslegen**: Drücken Sie den Shortcut, um auf dem Bildschirm zu zeichnen
+
+---
+
 ## ✨ Funktionen
 
 ### 🎨 Bildschirmzeichnung
@@ -111,39 +146,6 @@ Unterstützt Chinesisch (Vereinfacht/Traditionell), Englisch, Japanisch, Koreani
 - ✅ **Anpassbare Stile**: Farben, Größen, Geschwindigkeiten und andere Parameter anpassen
 - ✅ **Autostart**: Optionaler automatischer Start beim Systemstart
 - ✅ **Systemtray**: Minimierung in den Systemtray für einfachen Zugriff
-
----
-
-## 📦 Installation
-
-### Installationsprogramm herunterladen
-
-Besuchen Sie die [Releases](https://github.com/game1024/Penio/releases)-Seite, um das Installationsprogramm für Ihr Betriebssystem herunterzuladen:
-
-- **Windows**: `Penio_x.x.x_x64_en-US.msi`
-- **macOS**: `Penio_x.x.x_aarch64.dmg` oder `Penio_x.x.x_x64.dmg`
-- **Linux**: `Penio_x.x.x_amd64.deb` oder `Penio_x.x.x_amd64.AppImage`
-
----
-
-## 🚀 Verwendung
-
-### Tastenkombinationen
-
-Standard-Shortcuts (in den Einstellungen anpassbar):
-
-- **Zeichenmodus umschalten**: `Ctrl+Shift+D` (Windows/Linux) / `Cmd+Shift+D` (macOS)
-- **Hauptfenster anzeigen/ausblenden**: Klick auf das Systemtray-Symbol
-
-### Grundlegende Bedienung
-
-1. **App starten**: Die App minimiert sich in den Systemtray
-2. **Einstellungen öffnen**: Tray-Symbol klicken → Einstellungen
-3. **Funktionen aktivieren**:
-   - Klickeffekte im Tab "Maus" aktivieren
-   - Tastatur-Echo im Tab "Tastatur" aktivieren
-   - Shortcuts im Tab "Zeichnung" konfigurieren
-4. **Loslegen**: Drücken Sie den Shortcut, um auf dem Bildschirm zu zeichnen
 
 ---
 

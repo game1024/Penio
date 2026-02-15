@@ -52,6 +52,41 @@
 
 ---
 
+## 📦 安装
+
+### 下载安装包
+
+前往 [Releases](https://github.com/game1024/Penio/releases) 页面下载适合你操作系统的安装包：
+
+- **Windows**: 
+  
+  <a href="https://get.microsoft.com/installer/download/9ppjv6gkgsg1?referrer=appbadge" target="_self">
+    <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  </a>
+
+- **macOS**:
+  - Apple Silicon (M1/M2/M3等): `Penio_x.x.x_aarch64.dmg`
+  - Intel 芯片: `Penio_x.x.x_x64.dmg`
+- **Linux**:
+  - ARM 芯片: `Penio_x.x.x_aarch64.deb` / `Penio_x.x.x_aarch64.AppImage` / `Penio_x.x.x_aarch64.rpm`
+  - x64 芯片: `Penio_x.x.x_amd64.deb` / `Penio_x.x.x_amd64.AppImage` / `Penio_x.x.x_amd64.rpm`
+
+---
+
+## 🚀 使用
+
+### 基本操作
+
+1. **启动应用**：应用会最小化到系统托盘
+2. **打开设置**：点击托盘图标 → 设置
+3. **启用功能**：
+   - 在"鼠标"标签页启用点击特效
+   - 在"键盘"标签页启用键盘回显
+   - 在"绘图"标签页配置快捷键
+4. **开始使用**：按下快捷键即可在屏幕上绘图
+
+---
+
 ## ✨ 功能特性
 
 ### 🎨 屏幕绘图
@@ -111,39 +146,6 @@
 - ✅ **自定义样式**：调整颜色、大小、速度等参数
 - ✅ **开机自启**：可设置开机自动启动
 - ✅ **系统托盘**：最小化到系统托盘，随时调用
-
----
-
-## 📦 安装
-
-### 下载安装包
-
-前往 [Releases](https://github.com/game1024/Penio/releases) 页面下载适合你操作系统的安装包：
-
-- **Windows**: `Penio_x.x.x_x64_en-US.msi`
-- **macOS**: `Penio_x.x.x_aarch64.dmg` 或 `Penio_x.x.x_x64.dmg`
-- **Linux**: `Penio_x.x.x_amd64.deb` 或 `Penio_x.x.x_amd64.AppImage`
-
----
-
-## 🚀 使用
-
-### 快捷键
-
-默认快捷键（可在设置中自定义）：
-
-- **切换绘图模式**: `Ctrl+Shift+D` (Windows/Linux) / `Cmd+Shift+D` (macOS)
-- **显示/隐藏主窗口**: 点击系统托盘图标
-
-### 基本操作
-
-1. **启动应用**：应用会最小化到系统托盘
-2. **打开设置**：点击托盘图标 → 设置
-3. **启用功能**：
-   - 在"鼠标"标签页启用点击特效
-   - 在"键盘"标签页启用键盘回显
-   - 在"绘图"标签页配置快捷键
-4. **开始使用**：按下快捷键即可在屏幕上绘图
 
 ---
 
