@@ -33,7 +33,6 @@ import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { useSnackbar } from "../contexts/SnackbarContext";
 import bilibiliIcon from "../assets/哔哩哔哩.svg";
-import patreonIcon from "../assets/patreon.svg";
 import githubIcon from "../assets/github.svg";
 
 function 关于页面() {
@@ -54,7 +53,6 @@ function 关于页面() {
     const fiofioWebsite = "https://www.fiofio.cn";
     const feedbackEmail = "feedback@fiofio.cn";
     const bilibiliUrl = "https://space.bilibili.com/426988409";
-    const patreonUrl = "https://patreon.com/game1024?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink";
     const githubUrl = "https://github.com/game1024/Penio";
 
     useEffect(() => {
@@ -86,10 +84,6 @@ function 关于页面() {
 
     const handleBilibiliClick = async () => {
         await open(bilibiliUrl);
-    };
-
-    const handlePatreonClick = async () => {
-        await open(patreonUrl);
     };
 
     const handleGithubClick = async () => {
@@ -208,28 +202,6 @@ function 关于页面() {
                             component="img"
                             src={githubIcon}
                             alt="GitHub"
-                            sx={{ width: '1.5rem', height: '1.5rem' }}
-                        />
-                    </IconButton>
-                </Tooltip>
-                <Tooltip title="Patreon" arrow>
-                    <IconButton
-                        onClick={handlePatreonClick}
-                        sx={{
-                            width: '3rem',
-                            height: '3rem',
-                            backgroundColor: '#F5F5F5',
-                            border: '1px solid #E0E0E0',
-                            '&:hover': {
-                                backgroundColor: '#EEEEEE',
-                                border: '1px solid #BDBDBD',
-                            },
-                        }}
-                    >
-                        <Box
-                            component="img"
-                            src={patreonIcon}
-                            alt="Patreon"
                             sx={{ width: '1.5rem', height: '1.5rem' }}
                         />
                     </IconButton>
