@@ -22,7 +22,7 @@ jobs:
             args: ''
           - platform: 'ubuntu-24.04'
             args: ''
-          - platform: 'ubuntu-24.04-arm64'
+          - platform: 'ubuntu-24.04-arm'
             args: ''
 
 
