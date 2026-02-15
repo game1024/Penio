@@ -30,39 +30,45 @@
 在屏幕上自由绘制，支持多种绘图工具，让你的演示更加直观。
 
 #### 压感画笔
-支持压感的画笔工具，线条粗细随力度变化 - [查看演示](docs/mp4/屏幕绘图-压感画笔.mp4)
+支持压感的画笔工具，线条粗细随力度变化
+
+<video src="https://github.com/user-attachments/assets/6a8c12da-22fc-43a0-bd1e-e0efef786cb9" width="50%"></video>
 
 #### 渐隐画笔
-笔迹自动渐隐消失，适合临时标注 - [查看演示](docs/mp4/屏幕绘图-渐隐画笔.mp4)
+笔迹自动渐隐消失，适合临时标注
+<video src="https://github.com/user-attachments/assets/af544067-d8e2-4ce6-b23a-ffec5baade2a" width="50%"></video>
 
 #### 矩形工具
-快速绘制矩形框，突出重点区域 - [查看演示](docs/mp4/屏幕绘图-矩形工具.mp4)
+快速绘制矩形框，突出重点区域
+<video src="https://github.com/user-attachments/assets/5814ca62-411b-4d8b-8d8a-75c70c5d4ab4" width="50%"></video>
 
 #### 椭圆工具
-绘制圆形和椭圆，标注关键内容 - [查看演示](docs/mp4/屏幕绘图-椭圆工具.mp4)
+绘制圆形和椭圆，标注关键内容
+<video src="https://github.com/user-attachments/assets/9b88060e-a554-41a3-9a65-8bc09542b17e" width="50%"></video>
 
 ### 🖱️ 鼠标点击特效
 
 为鼠标点击添加炫酷的视觉效果，让观众清楚看到你的操作。
 
 #### 水波纹
-[查看演示](docs/mp4/水波纹.mp4)
+<video src="https://github.com/user-attachments/assets/52ae721e-0b13-4d94-b9d4-cdef461e33a5" width="50%"></video>
 
 #### 烟花
-[查看演示](docs/mp4/烟花.mp4)
+<video src="https://github.com/user-attachments/assets/68fdf4a5-fce2-4bd6-aeef-0812f45f544f" width="50%"></video>
 
 #### 螺旋
-[查看演示](docs/mp4/螺旋.mp4)
+<video src="https://github.com/user-attachments/assets/f877ef60-26a8-48b8-8fad-3a423e3f34ec" width="50%"></video>
 
 #### 圆形描边
-[查看演示](docs/mp4/圆形描边.mp4)
+<video src="https://github.com/user-attachments/assets/8adce784-059b-413c-b646-9b3178674be4" width="50%"></video>
 
 #### 方形描边
-[查看演示](docs/mp4/方形描边.mp4)
+<video src="https://github.com/user-attachments/assets/5eaff1fc-a95c-423b-a833-751e9acd8e4d" width="50%"></video>
 
 ### ⌨️ 键盘回显
 
-实时显示你按下的按键，让教学演示更加清晰。[查看演示](docs/mp4/键盘回显.mp4)
+实时显示你按下的按键，让教学演示更加清晰。
+<video src="https://github.com/user-attachments/assets/2267d2dd-6a1a-493f-ab19-09f0e5e14d53" width="50%"></video>
 
 ### 🌍 多语言支持
 
