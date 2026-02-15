@@ -29,71 +29,40 @@
 
 在屏幕上自由绘制，支持多种绘图工具，让你的演示更加直观。
 
-<table>
-  <tr>
-    <td width="50%">
-      <h4>压感画笔</h4>
-      <video src="docs/mp4/屏幕绘图-压感画笔.mp4" controls></video>
-      <p>支持压感的画笔工具，线条粗细随力度变化</p>
-    </td>
-    <td width="50%">
-      <h4>渐隐画笔</h4>
-      <video src="docs/mp4/屏幕绘图-渐隐画笔.mp4" controls></video>
-      <p>笔迹自动渐隐消失，适合临时标注</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h4>矩形工具</h4>
-      <video src="docs/mp4/屏幕绘图-矩形工具.mp4" controls></video>
-      <p>快速绘制矩形框，突出重点区域</p>
-    </td>
-    <td width="50%">
-      <h4>椭圆工具</h4>
-      <video src="docs/mp4/屏幕绘图-椭圆工具.mp4" controls></video>
-      <p>绘制圆形和椭圆，标注关键内容</p>
-    </td>
-  </tr>
-</table>
+#### 压感画笔
+支持压感的画笔工具，线条粗细随力度变化 - [查看演示](docs/mp4/屏幕绘图-压感画笔.mp4)
+
+#### 渐隐画笔
+笔迹自动渐隐消失，适合临时标注 - [查看演示](docs/mp4/屏幕绘图-渐隐画笔.mp4)
+
+#### 矩形工具
+快速绘制矩形框，突出重点区域 - [查看演示](docs/mp4/屏幕绘图-矩形工具.mp4)
+
+#### 椭圆工具
+绘制圆形和椭圆，标注关键内容 - [查看演示](docs/mp4/屏幕绘图-椭圆工具.mp4)
 
 ### 🖱️ 鼠标点击特效
 
 为鼠标点击添加炫酷的视觉效果，让观众清楚看到你的操作。
 
-<table>
-  <tr>
-    <td width="33%">
-      <h4>水波纹</h4>
-      <video src="docs/mp4/水波纹.mp4" controls></video>
-    </td>
-    <td width="33%">
-      <h4>烟花</h4>
-      <video src="docs/mp4/烟花.mp4" controls></video>
-    </td>
-    <td width="33%">
-      <h4>螺旋</h4>
-      <video src="docs/mp4/螺旋.mp4" controls></video>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%">
-      <h4>圆形描边</h4>
-      <video src="docs/mp4/圆形描边.mp4" controls></video>
-    </td>
-    <td width="33%">
-      <h4>方形描边</h4>
-      <video src="docs/mp4/方形描边.mp4" controls></video>
-    </td>
-    <td width="33%">
-    </td>
-  </tr>
-</table>
+#### 水波纹
+[查看演示](docs/mp4/水波纹.mp4)
+
+#### 烟花
+[查看演示](docs/mp4/烟花.mp4)
+
+#### 螺旋
+[查看演示](docs/mp4/螺旋.mp4)
+
+#### 圆形描边
+[查看演示](docs/mp4/圆形描边.mp4)
+
+#### 方形描边
+[查看演示](docs/mp4/方形描边.mp4)
 
 ### ⌨️ 键盘回显
 
-实时显示你按下的按键，让教学演示更加清晰。
-
-<video src="docs/mp4/键盘回显.mp4" controls></video>
+实时显示你按下的按键，让教学演示更加清晰。[查看演示](docs/mp4/键盘回显.mp4)
 
 ### 🌍 多语言支持
 
@@ -170,6 +139,7 @@ bun run tauri build
 - **后端**: Rust
 - **绘图引擎**: Excalidraw
 - **动画**: Mo.js
+- **事件监听**：rdev
 
 ### 开发环境要求
 
@@ -224,6 +194,7 @@ penio/
 - [Excalidraw](https://excalidraw.com/) - 优秀的手绘风格绘图工具
 - [Mo.js](https://mojs.github.io/) - 灵活的动画库
 - [Material-UI](https://mui.com/) - React UI 组件库
+- [rdev](https://github.com/Narsil/rdev) - Rust 事件监听
 
 ---
 
@@ -232,7 +203,6 @@ penio/
 - **官网**: https://www.fiofio.cn
 - **邮箱**: feedback@fiofio.cn
 - **BiliBili**: [@game1024](https://space.bilibili.com/426988409)
-- **Discord**: [加入我们的社区](https://discord.gg/sTqWPkTcqq)
 - **GitHub Issues**: [报告问题](https://github.com/game1024/Penio/issues)
 
 ---
