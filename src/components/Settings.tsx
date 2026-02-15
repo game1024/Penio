@@ -665,9 +665,10 @@ function 鼠标设置页面() {
     };
 
     // 处理缩放比例修改完成（保持兼容性，但现在不需要做额外操作）
-    //const handleScaleChangeCommitted = async (value: number) => {
+    const handleScaleChangeCommitted = async (value: number) => {
         // 现在在onChange时就已经保存了，这里不需要额外操作
-    //};
+        console.log('Scale change committed:', value);
+    };
 
     // 处理速度变化
     const handleSpeedChange = async (value: number) => {
@@ -692,9 +693,10 @@ function 鼠标设置页面() {
     };
 
     // 处理速度修改完成（保持兼容性，但现在不需要做额外操作）
-    //const handleSpeedChangeCommitted = async (value: number) => {
+    const handleSpeedChangeCommitted = async (value: number) => {
         // 现在在onChange时就已经保存了，这里不需要额外操作
-    //};
+        console.log('Speed change committed:', value);
+    };
 
     return (
         <Box>
