@@ -1,0 +1,18 @@
+html {
+  background: 'transparent';
+  font-family: "Fira Code", "Noto Sans SC", "Noto Sans TC", "Noto Sans", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0rem;
+  background: rgba(120,120,120,0.0);
+}
+
+.no-pointer {
+  pointer-events: none;
+  z-index: 99999;
+}

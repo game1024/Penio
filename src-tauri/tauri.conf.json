@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Penio",
+  "version": "1.0.0",
+  "identifier": "com.fiofio.penio",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "title": "控制台",
+        "url": "/",
+        "label": "console",
+        "width": 880,
+        "height": 720,
+        "decorations": true,
+        "shadow": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["msi", "dmg", "deb", "rpm", "appimage"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "shortDescription": "Penio",
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": "",
+      "wix": {
+        "language": [
+          "zh-CN"
+        ],
+        "template": null
+      },
+      "nsis": {
+        "languages": [
+          "SimpChinese"
+        ],
+        "displayLanguageSelector": false
+      }
+    },
+    "macOS": {
+      "minimumSystemVersion": "10.13",
+      "frameworks": [],
+      "exceptionDomain": null,
+      "signingIdentity": null,
+      "providerShortName": null,
+      "entitlements": null,
+      "files": {
+        "Resources/zh-Hans.lproj/InfoPlist.strings": "locale/zh-Hans.lproj/InfoPlist.strings",
+        "Resources/en.lproj/InfoPlist.strings": "locale/en.lproj/InfoPlist.strings"
+      }
+    }
+  }
+}

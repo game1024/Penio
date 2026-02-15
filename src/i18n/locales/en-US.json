@@ -1,0 +1,155 @@
+{
+  "tabs": {
+    "mouse": "Mouse",
+    "keyboard": "Keyboard",
+    "drawing": "Drawing",
+    "activation": "Activation",
+    "general": "General",
+    "about": "About"
+  },
+  "mouse": {
+    "title": "Mouse Settings",
+    "enableClickEffect": "Enable Click Effect",
+    "clickEffectType": "Click Effect Type",
+    "scale": "Scale",
+    "speed": "Speed",
+    "effects": {
+      "ripple": "Ripple",
+      "firework": "Firework",
+      "spiral": "Spiral",
+      "circleStroke": "Circle Stroke",
+      "rectStroke": "Rect Stroke"
+    },
+    "messages": {
+      "enabled": "Click effect enabled",
+      "disabled": "Click effect disabled",
+      "typeChanged": "Click effect changed to {{type}}",
+      "scaleUpdated": "Scale updated",
+      "speedUpdated": "Speed updated",
+      "saveFailed": "Failed to save settings",
+      "loadFailed": "Failed to load settings",
+      "vipOnly": "Click effect type is a VIP feature"
+    }
+  },
+  "keyboard": {
+    "title": "Keyboard Settings",
+    "enableKeyboardEcho": "Enable Keyboard Echo",
+    "enableClickEcho": "Enable Click Echo",
+    "scale": "Scale",
+    "offsetX": "X Offset",
+    "offsetY": "Y Offset",
+    "fgColor": "FG Color",
+    "bgColor": "BG Color",
+    "messages": {
+      "keyboardEnabled": "Keyboard echo enabled",
+      "keyboardDisabled": "Keyboard echo disabled",
+      "clickEnabled": "Click echo enabled",
+      "clickDisabled": "Click echo disabled",
+      "fgColorUpdated": "FG color updated",
+      "bgColorUpdated": "BG color updated",
+      "saveFailed": "Failed to save settings",
+      "loadFailed": "Failed to load settings",
+      "fgColorVipOnly": "FG color setting is a VIP feature",
+      "bgColorVipOnly": "BG color setting is a VIP feature"
+    }
+  },
+  "drawing": {
+    "title": "Drawing Settings",
+    "toggleMode": "Toggle Drawing Mode",
+    "clearAnnotation": "Clear Annotation",
+    "shortcutHelp": "Shortcut Help",
+    "messages": {
+      "shortcutUpdated": "Shortcut set to {{shortcut}}",
+      "saveFailed": "Failed to save settings: {{error}}",
+      "loadFailed": "Failed to load settings",
+      "enterDrawMode": "Enter drawing mode",
+      "exitDrawMode": "Exit drawing mode"
+    }
+  },
+  "general": {
+    "title": "System Settings",
+    "permissionTitle": "Permission Settings",
+    "autoStart": "Auto Start",
+    "language": "Language",
+    "accessibilityPermission": "Accessibility Permission",
+    "inputMonitoringPermission": "Input Monitoring Permission",
+    "authorized": "Authorized",
+    "requestPermission": "Request Permission",
+    "messages": {
+      "autoStartEnabled": "Auto start enabled",
+      "autoStartDisabled": "Auto start disabled",
+      "autoStartFailed": "Failed to set auto start",
+      "grantAccessibilityPermission": "Please grant accessibility permission in System Settings",
+      "grantInputMonitoringPermission": "Please grant input monitoring permission in System Settings",
+      "requestPermissionFailed": "Failed to request permission"
+    }
+  },
+  "activation": {
+    "title": "Member Center",
+    "subtitle": {
+      "vip": "Enjoy all VIP privileges and features",
+      "normal": "Activate membership to unlock all premium features"
+    },
+    "status": "Current Status",
+    "vipMember": "Lifetime VIP",
+    "normalVersion": "Free Version",
+    "benefits": "Your VIP Benefits",
+    "benefitList": {
+      "noWatermark": "No Watermark",
+      "advancedClickEffect": "Advanced Click Effects",
+      "advancedKeyboard": "Advanced Keyboard Effects"
+    },
+    "upgradeHint": "Activate membership to unlock more premium features and enhance your experience",
+    "redeemTitle": "Redeem Activation Code",
+    "getCodeHint": "Don't have an activation code? Visit",
+    "bilibiliPage": "BiliBili",
+    "patreonPage": "Patreon",
+    "getCode": "to get one",
+    "codeLabel": "Activation Code",
+    "codePlaceholder": "Enter your activation code",
+    "activateButton": "Activate Now",
+    "messages": {
+      "emptyCode": "Please enter activation code",
+      "success": "Activation successful! You are now a VIP member.",
+      "invalidCode": "Invalid activation code"
+    }
+  },
+  "about": {
+    "version": "Version {{version}}",
+    "officialAccount": "Official Account",
+    "visitWebsite": "Visit Website",
+    "contactUs": "Contact Us",
+    "copySystemInfo": "System Info",
+    "copySuccess": "System info copied to clipboard",
+    "copyFailed": "Failed to copy, please try again",
+    "copyright": "© {{year}} FioFio Studio. All rights reserved."
+  },
+  "tray": {
+    "preferences": "Preferences",
+    "resetWindow": "Reset Window",
+    "website": "Website",
+    "version": "Version {{version}}",
+    "restart": "Restart",
+    "quit": "Quit"
+  },
+  "keys": {
+    "kp0": "NumPad 0",
+    "kp1": "NumPad 1",
+    "kp2": "NumPad 2",
+    "kp3": "NumPad 3",
+    "kp4": "NumPad 4",
+    "kp5": "NumPad 5",
+    "kp6": "NumPad 6",
+    "kp7": "NumPad 7",
+    "kp8": "NumPad 8",
+    "kp9": "NumPad 9",
+    "kpDelete": "NumPad .",
+    "kpDivide": "NumPad /",
+    "kpMultiply": "NumPad *",
+    "kpMinus": "NumPad -",
+    "kpPlus": "NumPad +",
+    "leftClick": "LClick",
+    "middleClick": "MClick",
+    "rightClick": "RClick"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "tabs": {
+    "mouse": "Maus",
+    "keyboard": "Tastatur",
+    "drawing": "Zeichnen",
+    "activation": "Aktivierung",
+    "general": "Allgemein",
+    "about": "Über"
+  },
+  "mouse": {
+    "title": "Mauseinstellungen",
+    "enableClickEffect": "Klickeffekt aktivieren",
+    "clickEffectType": "Klickeffekttyp",
+    "scale": "Skalierung",
+    "speed": "Geschwindigkeit",
+    "effects": {
+      "ripple": "Welle",
+      "firework": "Feuerwerk",
+      "spiral": "Spirale",
+      "circleStroke": "Kreis",
+      "rectStroke": "Rechteck"
+    },
+    "messages": {
+      "enabled": "Klickeffekt aktiviert",
+      "disabled": "Klickeffekt deaktiviert",
+      "typeChanged": "Klickeffekt geändert zu {{type}}",
+      "scaleUpdated": "Skalierung aktualisiert",
+      "speedUpdated": "Animationsgeschwindigkeit aktualisiert",
+      "saveFailed": "Einstellungen konnten nicht gespeichert werden",
+      "loadFailed": "Einstellungen konnten nicht geladen werden",
+      "vipOnly": "Der Klickeffekttyp ist eine Premium-Funktion"
+    }
+  },
+  "keyboard": {
+    "title": "Tastatureinstellungen",
+    "enableKeyboardEcho": "Tastaturecho aktivieren",
+    "enableClickEcho": "Mausecho aktivieren",
+    "scale": "Skalierung",
+    "offsetX": "X-Versatz",
+    "offsetY": "Y-Versatz",
+    "fgColor": "Schriftfarbe",
+    "bgColor": "Hintergrundfarbe",
+    "messages": {
+      "keyboardEnabled": "Tastaturecho aktiviert",
+      "keyboardDisabled": "Tastaturecho deaktiviert",
+      "clickEnabled": "Mausecho aktiviert",
+      "clickDisabled": "Mausecho deaktiviert",
+      "fgColorUpdated": "Schriftfarbe aktualisiert",
+      "bgColorUpdated": "Hintergrundfarbe aktualisiert",
+      "saveFailed": "Einstellungen konnten nicht gespeichert werden",
+      "loadFailed": "Einstellungen konnten nicht geladen werden",
+      "fgColorVipOnly": "Die Schriftfarbeneinstellung ist eine Premium-Funktion",
+      "bgColorVipOnly": "Die Hintergrundfarbeinstellung ist eine Premium-Funktion"
+    }
+  },
+  "drawing": {
+    "title": "Zeicheneinstellungen",
+    "toggleMode": "Zeichenmodus umschalten",
+    "clearAnnotation": "Anmerkungen löschen",
+    "shortcutHelp": "Tastenkürzel-Hilfe",
+    "messages": {
+      "shortcutUpdated": "Tastenkürzel auf {{shortcut}} gesetzt",
+      "saveFailed": "Speichern fehlgeschlagen: {{error}}",
+      "loadFailed": "Einstellungen konnten nicht geladen werden",
+      "enterDrawMode": "Zeichenmodus aktiviert",
+      "exitDrawMode": "Zeichenmodus deaktiviert"
+    }
+  },
+  "general": {
+    "title": "Systemeinstellungen",
+    "permissionTitle": "Berechtigungseinstellungen",
+    "autoStart": "Automatisch starten",
+    "language": "Sprache / Language",
+    "accessibilityPermission": "Bedienungshilfen-Berechtigung",
+    "inputMonitoringPermission": "Eingabeüberwachungs-Berechtigung",
+    "authorized": "Autorisiert",
+    "requestPermission": "Berechtigung anfordern",
+    "messages": {
+      "autoStartEnabled": "Autostart aktiviert",
+      "autoStartDisabled": "Autostart deaktiviert",
+      "autoStartFailed": "Autostart-Einstellung fehlgeschlagen",
+      "grantAccessibilityPermission": "Bitte gewähren Sie die Bedienungshilfen-Berechtigung in den Systemeinstellungen",
+      "grantInputMonitoringPermission": "Bitte gewähren Sie die Eingabeüberwachungs-Berechtigung in den Systemeinstellungen",
+      "requestPermissionFailed": "Berechtigungsanforderung fehlgeschlagen"
+    }
+  },
+  "activation": {
+    "title": "Mitgliederzentrum",
+    "subtitle": {
+      "vip": "Genießen Sie Premium-Vorteile",
+      "normal": "Werden Sie Mitglied, um alle erweiterten Funktionen freizuschalten"
+    },
+    "status": "Aktueller Status",
+    "vipMember": "Dauerhaftes Mitglied",
+    "normalVersion": "Standardversion",
+    "benefits": "Mitgliedsvorteile",
+    "benefitList": {
+      "noWatermark": "Wasserzeichen entfernen",
+      "advancedClickEffect": "Erweiterte Klickeffekte",
+      "advancedKeyboard": "Erweiterte Tastatureffekte"
+    },
+    "upgradeHint": "Werden Sie Mitglied, um weitere erweiterte Funktionen freizuschalten",
+    "redeemTitle": "Aktivierungscode einlösen",
+    "getCodeHint": "Noch keinen Aktivierungscode? Besuchen Sie",
+    "bilibiliPage": "BiliBili",
+    "patreonPage": "Patreon",
+    "getCode": "um einen Code zu erhalten",
+    "codeLabel": "Aktivierungscode",
+    "codePlaceholder": "Geben Sie Ihren Mitglieds-Aktivierungscode ein",
+    "activateButton": "Jetzt aktivieren",
+    "messages": {
+      "emptyCode": "Bitte geben Sie einen Aktivierungscode ein",
+      "success": "Aktivierung erfolgreich! Sie sind jetzt Premium-Mitglied.",
+      "invalidCode": "Ungültiger Aktivierungscode"
+    }
+  },
+  "about": {
+    "version": "Version {{version}}",
+    "officialAccount": "Offizieller Account",
+    "visitWebsite": "Website besuchen",
+    "contactUs": "Kontaktieren Sie uns",    "copySystemInfo": "Systeminformationen",
+    "copySuccess": "Systeminformationen in die Zwischenablage kopiert",
+    "copyFailed": "Kopieren fehlgeschlagen, bitte versuchen Sie es erneut",    "copyright": "© {{year}} FioFio Studio. Alle Rechte vorbehalten."
+  },
+  "tray": {
+    "preferences": "Einstellungen",
+    "resetWindow": "Fenster zurücksetzen",
+    "website": "Website",
+    "version": "Version {{version}}",
+    "restart": "Neustart",
+    "quit": "Beenden"
+  },
+  "keys": {
+    "kp0": "NumPad 0",
+    "kp1": "NumPad 1",
+    "kp2": "NumPad 2",
+    "kp3": "NumPad 3",
+    "kp4": "NumPad 4",
+    "kp5": "NumPad 5",
+    "kp6": "NumPad 6",
+    "kp7": "NumPad 7",
+    "kp8": "NumPad 8",
+    "kp9": "NumPad 9",
+    "kpDelete": "NumPad .",
+    "kpDivide": "NumPad /",
+    "kpMultiply": "NumPad *",
+    "kpMinus": "NumPad -",
+    "kpPlus": "NumPad +",
+    "leftClick": "LClick",
+    "middleClick": "MClick",
+    "rightClick": "RClick"
+  }
+}

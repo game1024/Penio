@@ -1,0 +1,12 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Penio";
+CFBundleDisplayName = "Penio";
+CFBundleGetInfoString = "Penio 屏幕绘图工具";
+NSHumanReadableCopyright = "飞鸥工作室 版权所有 © 2026";
+
+/* Privacy - Accessibility Usage Description */
+NSAccessibilityUsageDescription = "Penio 需要辅助功能权限以监听全局鼠标和键盘事件，用于屏幕绘图和手势识别。";
+
+/* Privacy - Input Monitoring Usage Description */
+NSInputMonitoringUsageDescription = "Penio 需要输入监控权限以捕获鼠标和键盘输入，实现实时绘图功能。";

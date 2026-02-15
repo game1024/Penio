@@ -1,0 +1,155 @@
+{
+  "tabs": {
+    "mouse": "마우스",
+    "keyboard": "키보드",
+    "drawing": "그리기",
+    "activation": "활성화",
+    "general": "일반",
+    "about": "정보"
+  },
+  "mouse": {
+    "title": "마우스 설정",
+    "enableClickEffect": "클릭 효과 활성화",
+    "clickEffectType": "클릭 효과 유형",
+    "scale": "크기",
+    "speed": "속도",
+    "effects": {
+      "ripple": "물결",
+      "firework": "불꽃놀이",
+      "spiral": "나선형",
+      "circleStroke": "원형 스트로크",
+      "rectStroke": "사각형 스트로크"
+    },
+    "messages": {
+      "enabled": "클릭 효과가 활성화되었습니다",
+      "disabled": "클릭 효과가 비활성화되었습니다",
+      "typeChanged": "클릭 효과가 {{type}}(으)로 변경되었습니다",
+      "scaleUpdated": "크기가 업데이트되었습니다",
+      "speedUpdated": "애니메이션 속도가 업데이트되었습니다",
+      "saveFailed": "설정 저장에 실패했습니다",
+      "loadFailed": "설정 로드에 실패했습니다",
+      "vipOnly": "클릭 효과 유형은 프리미엄 기능입니다"
+    }
+  },
+  "keyboard": {
+    "title": "키보드 설정",
+    "enableKeyboardEcho": "키보드 에코 활성화",
+    "enableClickEcho": "마우스 에코 활성화",
+    "scale": "크기",
+    "offsetX": "X 오프셋",
+    "offsetY": "Y 오프셋",
+    "fgColor": "글꼴 색상",
+    "bgColor": "배경 색상",
+    "messages": {
+      "keyboardEnabled": "키보드 에코가 활성화되었습니다",
+      "keyboardDisabled": "키보드 에코가 비활성화되었습니다",
+      "clickEnabled": "마우스 에코가 활성화되었습니다",
+      "clickDisabled": "마우스 에코가 비활성화되었습니다",
+      "fgColorUpdated": "글꼴 색상이 업데이트되었습니다",
+      "bgColorUpdated": "배경 색상이 업데이트되었습니다",
+      "saveFailed": "설정 저장에 실패했습니다",
+      "loadFailed": "설정 로드에 실패했습니다",
+      "fgColorVipOnly": "글꼴 색상 설정은 프리미엄 기능입니다",
+      "bgColorVipOnly": "배경 색상 설정은 프리미엄 기능입니다"
+    }
+  },
+  "drawing": {
+    "title": "그리기 설정",
+    "toggleMode": "그리기 모드 전환",
+    "clearAnnotation": "주석 지우기",
+    "shortcutHelp": "단축키 도움말",
+    "messages": {
+      "shortcutUpdated": "단축키가 {{shortcut}}(으)로 설정되었습니다",
+      "saveFailed": "설정 저장에 실패했습니다: {{error}}",
+      "loadFailed": "설정 로드에 실패했습니다",
+      "enterDrawMode": "그리기 모드 진입",
+      "exitDrawMode": "그리기 모드 종료"
+    }
+  },
+  "general": {
+    "title": "시스템 설정",
+    "permissionTitle": "권한 설정",
+    "autoStart": "시작 시 자동 실행",
+    "language": "언어 / Language",
+    "accessibilityPermission": "접근성 권한",
+    "inputMonitoringPermission": "입력 모니터링 권한",
+    "authorized": "승인됨",
+    "requestPermission": "권한 요청",
+    "messages": {
+      "autoStartEnabled": "자동 시작이 활성화되었습니다",
+      "autoStartDisabled": "자동 시작이 비활성화되었습니다",
+      "autoStartFailed": "자동 시작 설정에 실패했습니다",
+      "grantAccessibilityPermission": "시스템 설정에서 접근성 권한을 허용해주세요",
+      "grantInputMonitoringPermission": "시스템 설정에서 입력 모니터링 권한을 허용해주세요",
+      "requestPermissionFailed": "권한 요청에 실패했습니다"
+    }
+  },
+  "activation": {
+    "title": "회원 센터",
+    "subtitle": {
+      "vip": "프리미엄 혜택을 누리세요",
+      "normal": "회원이 되어 모든 고급 기능 잠금 해제"
+    },
+    "status": "현재 상태",
+    "vipMember": "영구 회원",
+    "normalVersion": "일반 버전",
+    "benefits": "회원 혜택",
+    "benefitList": {
+      "noWatermark": "워터마크 제거",
+      "advancedClickEffect": "고급 클릭 효과",
+      "advancedKeyboard": "고급 키보드 효과"
+    },
+    "upgradeHint": "회원이 되어 더 많은 고급 기능을 잠금 해제하세요",
+    "redeemTitle": "활성화 코드 교환",
+    "getCodeHint": "활성화 코드가 없으신가요?",
+    "bilibiliPage": "BiliBili",
+    "patreonPage": "Patreon",
+    "getCode": "에서 코드 받기",
+    "codeLabel": "활성화 코드",
+    "codePlaceholder": "회원 활성화 코드를 입력하세요",
+    "activateButton": "지금 활성화",
+    "messages": {
+      "emptyCode": "활성화 코드를 입력하세요",
+      "success": "활성화 성공! 프리미엄 회원이 되었습니다.",
+      "invalidCode": "유효하지 않은 활성화 코드"
+    }
+  },
+  "about": {
+    "version": "버전 {{version}}",
+    "officialAccount": "공식 계정",
+    "visitWebsite": "웹사이트 방문",
+    "contactUs": "문의하기",
+    "copySystemInfo": "시스템 정보",
+    "copySuccess": "시스템 정보가 클립보드에 복사되었습니다",
+    "copyFailed": "복사에 실패했습니다. 다시 시도해 주세요",
+    "copyright": "© {{year}} FioFio Studio. All rights reserved."
+  },
+  "tray": {
+    "preferences": "환경설정",
+    "resetWindow": "창 초기화",
+    "website": "웹사이트",
+    "version": "버전 {{version}}",
+    "restart": "재시작",
+    "quit": "종료"
+  },
+  "keys": {
+    "kp0": "NumPad 0",
+    "kp1": "NumPad 1",
+    "kp2": "NumPad 2",
+    "kp3": "NumPad 3",
+    "kp4": "NumPad 4",
+    "kp5": "NumPad 5",
+    "kp6": "NumPad 6",
+    "kp7": "NumPad 7",
+    "kp8": "NumPad 8",
+    "kp9": "NumPad 9",
+    "kpDelete": "NumPad .",
+    "kpDivide": "NumPad /",
+    "kpMultiply": "NumPad *",
+    "kpMinus": "NumPad -",
+    "kpPlus": "NumPad +",
+    "leftClick": "LClick",
+    "middleClick": "MClick",
+    "rightClick": "RClick"
+  }
+}

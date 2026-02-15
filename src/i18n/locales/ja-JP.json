@@ -1,0 +1,155 @@
+{
+  "tabs": {
+    "mouse": "マウス",
+    "keyboard": "キーボード",
+    "drawing": "描画",
+    "activation": "アクティベーション",
+    "general": "一般",
+    "about": "情報"
+  },
+  "mouse": {
+    "title": "マウス設定",
+    "enableClickEffect": "クリックエフェクトを有効にする",
+    "clickEffectType": "クリックエフェクトの種類",
+    "scale": "スケール",
+    "speed": "速度",
+    "effects": {
+      "ripple": "波紋",
+      "firework": "花火",
+      "spiral": "スパイラル",
+      "circleStroke": "円形ストローク",
+      "rectStroke": "矩形ストローク"
+    },
+    "messages": {
+      "enabled": "クリックエフェクトが有効になりました",
+      "disabled": "クリックエフェクトが無効になりました",
+      "typeChanged": "クリックエフェクトを {{type}} に変更しました",
+      "scaleUpdated": "スケールが更新されました",
+      "speedUpdated": "アニメーション速度が更新されました",
+      "saveFailed": "設定の保存に失敗しました",
+      "loadFailed": "設定の読み込みに失敗しました",
+      "vipOnly": "クリックエフェクトの種類はプレミアム機能です"
+    }
+  },
+  "keyboard": {
+    "title": "キーボード設定",
+    "enableKeyboardEcho": "キーボードエコーを有効にする",
+    "enableClickEcho": "マウスエコーを有効にする",
+    "scale": "スケール",
+    "offsetX": "X オフセット",
+    "offsetY": "Y オフセット",
+    "fgColor": "フォントカラー",
+    "bgColor": "背景色",
+    "messages": {
+      "keyboardEnabled": "キーボードエコーが有効になりました",
+      "keyboardDisabled": "キーボードエコーが無効になりました",
+      "clickEnabled": "マウスエコーが有効になりました",
+      "clickDisabled": "マウスエコーが無効になりました",
+      "fgColorUpdated": "フォントカラーが更新されました",
+      "bgColorUpdated": "背景色が更新されました",
+      "saveFailed": "設定の保存に失敗しました",
+      "loadFailed": "設定の読み込みに失敗しました",
+      "fgColorVipOnly": "フォントカラー設定はプレミアム機能です",
+      "bgColorVipOnly": "背景色設定はプレミアム機能です"
+    }
+  },
+  "drawing": {
+    "title": "描画設定",
+    "toggleMode": "描画モード切替",
+    "clearAnnotation": "注釈をクリア",
+    "shortcutHelp": "ショートカットヘルプ",
+    "messages": {
+      "shortcutUpdated": "ショートカットが {{shortcut}} に設定されました",
+      "saveFailed": "設定の保存に失敗しました: {{error}}",
+      "loadFailed": "設定の読み込みに失敗しました",
+      "enterDrawMode": "描画モードに入りました",
+      "exitDrawMode": "描画モードを終了しました"
+    }
+  },
+  "general": {
+    "title": "システム設定",
+    "permissionTitle": "権限設定",
+    "autoStart": "起動時に自動起動",
+    "language": "言語 / Language",
+    "accessibilityPermission": "アクセシビリティ権限",
+    "inputMonitoringPermission": "入力監視権限",
+    "authorized": "認可済み",
+    "requestPermission": "権限をリクエスト",
+    "messages": {
+      "autoStartEnabled": "自動起動が有効になりました",
+      "autoStartDisabled": "自動起動が無効になりました",
+      "autoStartFailed": "自動起動の設定に失敗しました",
+      "grantAccessibilityPermission": "システム設定でアクセシビリティ権限を許可してください",
+      "grantInputMonitoringPermission": "システム設定で入力監視権限を許可してください",
+      "requestPermissionFailed": "権限のリクエストに失敗しました"
+    }
+  },
+  "activation": {
+    "title": "メンバーセンター",
+    "subtitle": {
+      "vip": "プレミアム特典をお楽しみください",
+      "normal": "メンバーになってすべての高度な機能をアンロック"
+    },
+    "status": "現在のステータス",
+    "vipMember": "永久会員",
+    "normalVersion": "通常版",
+    "benefits": "メンバー特典",
+    "benefitList": {
+      "noWatermark": "透かしを削除",
+      "advancedClickEffect": "高度なクリックエフェクト",
+      "advancedKeyboard": "高度なキーボードエフェクト"
+    },
+    "upgradeHint": "メンバーになってより多くの高度な機能をアンロック",
+    "redeemTitle": "アクティベーションコード引き換え",
+    "getCodeHint": "アクティベーションコードをお持ちでないですか？",
+    "bilibiliPage": "BiliBili",
+    "patreonPage": "Patreon",
+    "getCode": "でコードを取得",
+    "codeLabel": "アクティベーションコード",
+    "codePlaceholder": "メンバーアクティベーションコードを入力してください",
+    "activateButton": "今すぐアクティベート",
+    "messages": {
+      "emptyCode": "アクティベーションコードを入力してください",
+      "success": "アクティベーション成功！プレミアム会員になりました。",
+      "invalidCode": "無効なアクティベーションコード"
+    }
+  },
+  "about": {
+    "version": "バージョン {{version}}",
+    "officialAccount": "公式アカウント",
+    "visitWebsite": "ウェブサイトを訪問",
+    "contactUs": "お問い合わせ",
+    "copySystemInfo": "システム情報",
+    "copySuccess": "システム情報をクリップボードにコピーしました",
+    "copyFailed": "コピーに失敗しました。もう一度お試しください",
+    "copyright": "© {{year}} FioFio Studio. All rights reserved."
+  },
+  "tray": {
+    "preferences": "環境設定",
+    "resetWindow": "ウィンドウをリセット",
+    "website": "ウェブサイト",
+    "version": "バージョン {{version}}",
+    "restart": "再起動",
+    "quit": "終了"
+  },
+  "keys": {
+    "kp0": "NumPad 0",
+    "kp1": "NumPad 1",
+    "kp2": "NumPad 2",
+    "kp3": "NumPad 3",
+    "kp4": "NumPad 4",
+    "kp5": "NumPad 5",
+    "kp6": "NumPad 6",
+    "kp7": "NumPad 7",
+    "kp8": "NumPad 8",
+    "kp9": "NumPad 9",
+    "kpDelete": "NumPad .",
+    "kpDivide": "NumPad /",
+    "kpMultiply": "NumPad *",
+    "kpMinus": "NumPad -",
+    "kpPlus": "NumPad +",
+    "leftClick": "LClick",
+    "middleClick": "MClick",
+    "rightClick": "RClick"
+  }
+}

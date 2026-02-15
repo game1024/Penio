@@ -1,0 +1,55 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability for the main window",
+  "windows": ["console", "motion-board-*"],
+  "permissions": [
+    "core:default",
+    "opener:default",
+    "os:default",
+    "global-shortcut:default",
+    "global-shortcut:allow-is-registered",
+    "global-shortcut:allow-register",
+    "global-shortcut:allow-unregister",
+    "global-shortcut:allow-unregister-all",
+    "core:window:allow-show",
+    "core:window:allow-hide",
+    "core:window:allow-unminimize",
+    "core:window:allow-maximize",
+    "core:window:allow-set-focus",
+    "core:window:allow-set-focusable",
+    "core:window:allow-set-enabled",
+    "core:window:allow-set-ignore-cursor-events",
+    "core:window:allow-set-always-on-bottom",
+    "core:window:allow-set-always-on-top",
+    "core:window:allow-set-fullscreen",
+    "core:window:allow-set-skip-taskbar",
+    "core:app:allow-default-window-icon",
+    "core:webview:allow-create-webview-window",
+    "core:window:allow-set-position",
+    "core:window:allow-set-decorations",
+    "process:allow-exit",
+    "process:allow-restart",
+    "shell:allow-open",
+    "store:default",
+    "http:default",
+    "autostart:allow-enable",
+    "autostart:allow-disable",
+    "autostart:allow-is-enabled",
+    {
+      "identifier": "http:default",
+      "allow": [
+        { 
+          "url": "https://*.tauri.app" 
+        },
+        {
+          "url": "http://localhost:8888/*"
+        },
+        {
+          "url": "https://api.fiofio.cn/*"
+        }
+      ]
+    },
+    "macos-permissions:default"
+  ]
+}

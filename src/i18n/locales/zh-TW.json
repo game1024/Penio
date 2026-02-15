@@ -1,0 +1,151 @@
+{
+  "tabs": {
+    "mouse": "滑鼠",
+    "keyboard": "鍵盤",
+    "drawing": "繪圖",
+    "activation": "啟用",
+    "general": "通用",
+    "about": "關於"
+  },
+  "mouse": {
+    "title": "滑鼠設定",
+    "enableClickEffect": "啟用點擊特效",
+    "clickEffectType": "點擊特效類型",
+    "scale": "縮放",
+    "speed": "速率",
+    "effects": {
+      "ripple": "水波紋",
+      "firework": "煙火",
+      "spiral": "螺旋",
+      "circleStroke": "圓形描邊",
+      "rectStroke": "方形描邊"
+    },
+    "messages": {
+      "enabled": "已啟用點擊特效",
+      "disabled": "已關閉點擊特效",
+      "typeChanged": "點擊特效已切換為 {{type}}",
+      "scaleUpdated": "縮放比例已更新",
+      "speedUpdated": "動畫速度已更新",
+      "saveFailed": "儲存設定失敗",
+      "loadFailed": "載入設定失敗",
+      "vipOnly": "點擊特效類型為會員專享功能"
+    }
+  },
+  "keyboard": {
+    "title": "鍵盤設定",
+    "enableKeyboardEcho": "啟用鍵盘回顯",
+    "enableClickEcho": "啟用滑鼠回顯",
+    "scale": "縮放",
+    "offsetX": "X 偏移",
+    "offsetY": "Y 偏移",
+    "fgColor": "字體顏色",
+    "bgColor": "背景顏色",
+    "messages": {
+      "keyboardEnabled": "已啟用鍵盤回顯",
+      "keyboardDisabled": "已關閉鍵盤回顯",
+      "clickEnabled": "已啟用滑鼠回顯",
+      "clickDisabled": "已關閉滑鼠回顯",
+      "fgColorUpdated": "字體顏色已更新",
+      "bgColorUpdated": "背景顏色已更新",
+      "saveFailed": "儲存設定失敗",
+      "loadFailed": "載入設定失敗",
+      "fgColorVipOnly": "字體顏色設定為會員專享功能",
+      "bgColorVipOnly": "背景顏色設定為會員專享功能"
+    }
+  },
+  "drawing": {
+    "title": "繪圖設定",
+    "toggleMode": "切換繪圖模式",
+    "clearAnnotation": "清空標註",
+    "shortcutHelp": "快速鍵說明",
+    "messages": {
+      "shortcutUpdated": "快速鍵已設定為 {{shortcut}}",
+      "saveFailed": "儲存設定失敗: {{error}}",
+      "loadFailed": "載入設定失敗",
+      "enterDrawMode": "進入繪製模式",
+      "exitDrawMode": "退出繪製模式"
+    }
+  },
+  "general": {
+    "title": "系統設定",
+    "permissionTitle": "權限設定",
+    "autoStart": "開機自動啟動",
+    "language": "語言 / Language",
+    "accessibilityPermission": "輔助功能權限",
+    "inputMonitoringPermission": "輸入監控權限",
+    "authorized": "已授權",
+    "requestPermission": "請求權限",
+    "messages": {
+      "autoStartEnabled": "已啟用開機自動啟動",
+      "autoStartDisabled": "已停用開機自動啟動",
+      "autoStartFailed": "設定開機自動啟動失敗",
+      "grantAccessibilityPermission": "請在彈出的系統設定中授予輔助功能權限",
+      "grantInputMonitoringPermission": "請在彈出的系統設定中授予輸入監控權限",
+      "requestPermissionFailed": "請求權限失敗"
+    }
+  },
+  "activation": {
+    "title": "會員中心",
+    "subtitle": {
+      "vip": "尊享會員特權，暢享所有功能",
+      "normal": "啟用會員，解鎖所有進階功能"
+    },
+    "status": "目前狀態",
+    "vipMember": "永久會員",
+    "normalVersion": "普通版",
+    "benefits": "您的會員權益",
+    "benefitList": {
+      "noWatermark": "移除浮水印",
+      "advancedClickEffect": "進階點擊特效",
+      "advancedKeyboard": "進階鍵盤特效"
+    },
+    "upgradeHint": "啟用會員以解鎖更多進階功能，提升使用體驗",
+    "redeemTitle": "啟用碼兌換",
+    "getCodeHint": "還沒有啟用碼？前往",
+    "bilibiliPage": "B站主頁",
+    "patreonPage": "Patreon",
+    "getCode": "取得啟用碼",
+    "codeLabel": "啟用碼",
+    "codePlaceholder": "請輸入您的會員啟用碼",
+    "activateButton": "立即啟用會員",
+    "messages": {
+      "emptyCode": "請輸入啟用碼",
+      "success": "啟用成功！您已成為尊貴的會員用戶。",
+      "invalidCode": "啟用碼無效"
+    }
+  },
+  "about": {
+    "version": "版本 {{version}}",
+    "officialAccount": "官方公眾號",
+    "visitWebsite": "造訪官網",
+    "contactUs": "聯絡我們",    "copySystemInfo": "軟體資訊",
+    "copySuccess": "軟體資訊已複製到剪貼簿",
+    "copyFailed": "複製失敗，請重試",    "copyright": "© {{year}} 飛鷗工作室. All rights reserved."
+  },
+  "tray": {
+    "preferences": "偏好設定",
+    "resetWindow": "重設視窗",
+    "website": "官網",
+    "version": "版本 {{version}}",
+    "restart": "重新啟動應用程式",
+    "quit": "結束"  },
+  "keys": {
+    "kp0": "小鍵盤0",
+    "kp1": "小鍵盤1",
+    "kp2": "小鍵盤2",
+    "kp3": "小鍵盤3",
+    "kp4": "小鍵盤4",
+    "kp5": "小鍵盤5",
+    "kp6": "小鍵盤6",
+    "kp7": "小鍵盤7",
+    "kp8": "小鍵盤8",
+    "kp9": "小鍵盤9",
+    "kpDelete": "小鍵盤.",
+    "kpDivide": "小鍵盤/",
+    "kpMultiply": "小鍵盤*",
+    "kpMinus": "小鍵盤-",
+    "kpPlus": "小鍵盤+",
+    "leftClick": "鼠標左鍵",
+    "middleClick": "鼠標中鍵",
+    "rightClick": "鼠標右鍵"  }
+}

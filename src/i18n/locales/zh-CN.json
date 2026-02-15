@@ -1,0 +1,155 @@
+{
+  "tabs": {
+    "mouse": "鼠标",
+    "keyboard": "键盘",
+    "drawing": "绘图",
+    "activation": "激活",
+    "general": "通用",
+    "about": "关于"
+  },
+  "mouse": {
+    "title": "鼠标设置",
+    "enableClickEffect": "启用点击特效",
+    "clickEffectType": "点击特效类型",
+    "scale": "缩放",
+    "speed": "速率",
+    "effects": {
+      "ripple": "水波纹",
+      "firework": "烟花",
+      "spiral": "螺旋",
+      "circleStroke": "圆形描边",
+      "rectStroke": "方形描边"
+    },
+    "messages": {
+      "enabled": "已启用点击特效",
+      "disabled": "已关闭点击特效",
+      "typeChanged": "点击特效已切换为 {{type}}",
+      "scaleUpdated": "缩放比例已更新",
+      "speedUpdated": "动画速度已更新",
+      "saveFailed": "保存设置失败",
+      "loadFailed": "加载设置失败",
+      "vipOnly": "点击特效类型为会员专享功能"
+    }
+  },
+  "keyboard": {
+    "title": "键盘设置",
+    "enableKeyboardEcho": "启用键盘回显",
+    "enableClickEcho": "启用鼠标回显",
+    "scale": "缩放",
+    "offsetX": "X 偏移",
+    "offsetY": "Y 偏移",
+    "fgColor": "字体颜色",
+    "bgColor": "背景颜色",
+    "messages": {
+      "keyboardEnabled": "已启用键盘回显",
+      "keyboardDisabled": "已关闭键盘回显",
+      "clickEnabled": "已启用鼠标回显",
+      "clickDisabled": "已关闭鼠标回显",
+      "fgColorUpdated": "字体颜色已更新",
+      "bgColorUpdated": "背景颜色已更新",
+      "saveFailed": "保存设置失败",
+      "loadFailed": "加载设置失败",
+      "fgColorVipOnly": "字体颜色设置为会员专享功能",
+      "bgColorVipOnly": "背景颜色设置为会员专享功能"
+    }
+  },
+  "drawing": {
+    "title": "绘图设置",
+    "toggleMode": "切换绘图模式",
+    "clearAnnotation": "清空标注",
+    "shortcutHelp": "快捷键帮助",
+    "messages": {
+      "shortcutUpdated": "快捷键已设置为 {{shortcut}}",
+      "saveFailed": "保存设置失败: {{error}}",
+      "loadFailed": "加载设置失败",
+      "enterDrawMode": "进入绘制模式",
+      "exitDrawMode": "退出绘制模式"
+    }
+  },
+  "general": {
+    "title": "系统设置",
+    "permissionTitle": "权限设置",
+    "autoStart": "开机自启",
+    "language": "语言 / Language",
+    "accessibilityPermission": "辅助功能权限",
+    "inputMonitoringPermission": "输入监控权限",
+    "authorized": "已授权",
+    "requestPermission": "请求权限",
+    "messages": {
+      "autoStartEnabled": "已启用开机自启动",
+      "autoStartDisabled": "已禁用开机自启动",
+      "autoStartFailed": "设置开机自启动失败",
+      "grantAccessibilityPermission": "请在弹出的系统设置中授予辅助功能权限",
+      "grantInputMonitoringPermission": "请在弹出的系统设置中授予输入监控权限",
+      "requestPermissionFailed": "请求权限失败"
+    }
+  },
+  "activation": {
+    "title": "会员中心",
+    "subtitle": {
+      "vip": "尊享会员特权，畅享所有功能",
+      "normal": "激活会员，解锁所有高级功能"
+    },
+    "status": "当前状态",
+    "vipMember": "永久会员",
+    "normalVersion": "普通版",
+    "benefits": "您的会员权益",
+    "benefitList": {
+      "noWatermark": "去除水印",
+      "advancedClickEffect": "高级点击特效",
+      "advancedKeyboard": "高级键盘特效"
+    },
+    "upgradeHint": "激活会员以解锁更多高级功能，提升使用体验",
+    "redeemTitle": "激活码兑换",
+    "getCodeHint": "还没有激活码？前往",
+    "bilibiliPage": "B站主页",
+    "patreonPage": "Patreon",
+    "getCode": "获取激活码",
+    "codeLabel": "激活码",
+    "codePlaceholder": "请输入您的会员激活码",
+    "activateButton": "立即激活会员",
+    "messages": {
+      "emptyCode": "请输入激活码",
+      "success": "激活成功！您已成为尊贵的会员用户。",
+      "invalidCode": "激活码无效"
+    }
+  },
+  "about": {
+    "version": "版本 {{version}}",
+    "officialAccount": "官方公众号",
+    "visitWebsite": "访问官网",
+    "contactUs": "联系我们",
+    "copySystemInfo": "软件信息",
+    "copySuccess": "软件信息已复制到剪贴板",
+    "copyFailed": "复制失败，请重试",
+    "copyright": "© {{year}} 飞鸥工作室. All rights reserved."
+  },
+  "tray": {
+    "preferences": "偏好设置",
+    "resetWindow": "重置窗口",
+    "website": "官网",
+    "version": "版本 {{version}}",
+    "restart": "重启应用",
+    "quit": "退出"
+  },
+  "keys": {
+    "kp0": "小键盘0",
+    "kp1": "小键盘1",
+    "kp2": "小键盘2",
+    "kp3": "小键盘3",
+    "kp4": "小键盘4",
+    "kp5": "小键盘5",
+    "kp6": "小键盘6",
+    "kp7": "小键盘7",
+    "kp8": "小键盘8",
+    "kp9": "小键盘9",
+    "kpDelete": "小键盘.",
+    "kpDivide": "小键盘/",
+    "kpMultiply": "小键盘*",
+    "kpMinus": "小键盘-",
+    "kpPlus": "小键盘+",
+    "leftClick": "鼠标左键",
+    "middleClick": "鼠标中键",
+    "rightClick": "鼠标右键"
+  }
+}

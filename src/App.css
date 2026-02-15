@@ -1,0 +1,9 @@
+/* 使用本地字体包，移除 jsDelivr CDN 加载 */
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: "Fira Code", "Noto Sans SC", "Noto Sans TC", "Noto Sans", sans-serif;
+}

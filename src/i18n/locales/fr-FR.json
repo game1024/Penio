@@ -1,0 +1,155 @@
+{
+  "tabs": {
+    "mouse": "Souris",
+    "keyboard": "Clavier",
+    "drawing": "Dessin",
+    "activation": "Activation",
+    "general": "Général",
+    "about": "À propos"
+  },
+  "mouse": {
+    "title": "Paramètres de la souris",
+    "enableClickEffect": "Activer l'effet de clic",
+    "clickEffectType": "Type d'effet de clic",
+    "scale": "Échelle",
+    "speed": "Vitesse",
+    "effects": {
+      "ripple": "Ondulation",
+      "firework": "Feu d'artifice",
+      "spiral": "Spirale",
+      "circleStroke": "Cercle",
+      "rectStroke": "Rectangle"
+    },
+    "messages": {
+      "enabled": "Effet de clic activé",
+      "disabled": "Effet de clic désactivé",
+      "typeChanged": "Effet de clic changé en {{type}}",
+      "scaleUpdated": "Échelle mise à jour",
+      "speedUpdated": "Vitesse d'animation mise à jour",
+      "saveFailed": "Échec de la sauvegarde des paramètres",
+      "loadFailed": "Échec du chargement des paramètres",
+      "vipOnly": "Le type d'effet de clic est une fonctionnalité premium"
+    }
+  },
+  "keyboard": {
+    "title": "Paramètres du clavier",
+    "enableKeyboardEcho": "Activer l'écho du clavier",
+    "enableClickEcho": "Activer l'écho de la souris",
+    "scale": "Échelle",
+    "offsetX": "Décalage X",
+    "offsetY": "Décalage Y",
+    "fgColor": "Couleur de police",
+    "bgColor": "Couleur de fond",
+    "messages": {
+      "keyboardEnabled": "Écho du clavier activé",
+      "keyboardDisabled": "Écho du clavier désactivé",
+      "clickEnabled": "Écho de la souris activé",
+      "clickDisabled": "Écho de la souris désactivé",
+      "fgColorUpdated": "Couleur de police mise à jour",
+      "bgColorUpdated": "Couleur de fond mise à jour",
+      "saveFailed": "Échec de la sauvegarde des paramètres",
+      "loadFailed": "Échec du chargement des paramètres",
+      "fgColorVipOnly": "Le paramètre de couleur de police est une fonctionnalité premium",
+      "bgColorVipOnly": "Le paramètre de couleur de fond est une fonctionnalité premium"
+    }
+  },
+  "drawing": {
+    "title": "Paramètres de dessin",
+    "toggleMode": "Basculer le mode dessin",
+    "clearAnnotation": "Effacer les annotations",
+    "shortcutHelp": "Aide des raccourcis",
+    "messages": {
+      "shortcutUpdated": "Raccourci défini sur {{shortcut}}",
+      "saveFailed": "Échec de la sauvegarde: {{error}}",
+      "loadFailed": "Échec du chargement des paramètres",
+      "enterDrawMode": "Mode dessin activé",
+      "exitDrawMode": "Mode dessin désactivé"
+    }
+  },
+  "general": {
+    "title": "Paramètres système",
+    "permissionTitle": "Paramètres des permissions",
+    "autoStart": "Démarrage automatique",
+    "language": "Langue / Language",
+    "accessibilityPermission": "Permission d'accessibilité",
+    "inputMonitoringPermission": "Permission de surveillance des entrées",
+    "authorized": "Autorisé",
+    "requestPermission": "Demander l'autorisation",
+    "messages": {
+      "autoStartEnabled": "Démarrage automatique activé",
+      "autoStartDisabled": "Démarrage automatique désactivé",
+      "autoStartFailed": "Échec de la configuration du démarrage automatique",
+      "grantAccessibilityPermission": "Veuillez accorder la permission d'accessibilité dans les Réglages Système",
+      "grantInputMonitoringPermission": "Veuillez accorder la permission de surveillance des entrées dans les Réglages Système",
+      "requestPermissionFailed": "Échec de la demande d'autorisation"
+    }
+  },
+  "activation": {
+    "title": "Centre des membres",
+    "subtitle": {
+      "vip": "Profitez des privilèges premium",
+      "normal": "Devenez membre pour débloquer toutes les fonctionnalités avancées"
+    },
+    "status": "Statut actuel",
+    "vipMember": "Membre permanent",
+    "normalVersion": "Version standard",
+    "benefits": "Avantages membres",
+    "benefitList": {
+      "noWatermark": "Supprimer le filigrane",
+      "advancedClickEffect": "Effets de clic avancés",
+      "advancedKeyboard": "Effets de clavier avancés"
+    },
+    "upgradeHint": "Devenez membre pour débloquer plus de fonctionnalités avancées",
+    "redeemTitle": "Échanger le code d'activation",
+    "getCodeHint": "Vous n'avez pas de code d'activation ? Rendez-vous sur",
+    "bilibiliPage": "BiliBili",
+    "patreonPage": "Patreon",
+    "getCode": "pour obtenir un code",
+    "codeLabel": "Code d'activation",
+    "codePlaceholder": "Entrez votre code d'activation membre",
+    "activateButton": "Activer maintenant",
+    "messages": {
+      "emptyCode": "Veuillez entrer un code d'activation",
+      "success": "Activation réussie ! Vous êtes maintenant membre premium.",
+      "invalidCode": "Code d'activation invalide"
+    }
+  },
+  "about": {
+    "version": "Version {{version}}",
+    "officialAccount": "Compte officiel",
+    "visitWebsite": "Visiter le site web",
+    "contactUs": "Nous contacter",
+    "copySystemInfo": "Informations système",
+    "copySuccess": "Informations système copiées dans le presse-papiers",
+    "copyFailed": "Échec de la copie, veuillez réessayer",
+    "copyright": "© {{year}} FioFio Studio. Tous droits réservés."
+  },
+  "tray": {
+    "preferences": "Préférences",
+    "resetWindow": "Réinitialiser la fenêtre",
+    "website": "Site web",
+    "version": "Version {{version}}",
+    "restart": "Redémarrer",
+    "quit": "Quitter"
+  },
+  "keys": {
+    "kp0": "NumPad 0",
+    "kp1": "NumPad 1",
+    "kp2": "NumPad 2",
+    "kp3": "NumPad 3",
+    "kp4": "NumPad 4",
+    "kp5": "NumPad 5",
+    "kp6": "NumPad 6",
+    "kp7": "NumPad 7",
+    "kp8": "NumPad 8",
+    "kp9": "NumPad 9",
+    "kpDelete": "NumPad .",
+    "kpDivide": "NumPad /",
+    "kpMultiply": "NumPad *",
+    "kpMinus": "NumPad -",
+    "kpPlus": "NumPad +",
+    "leftClick": "LClick",
+    "middleClick": "MClick",
+    "rightClick": "RClick"
+  }
+}

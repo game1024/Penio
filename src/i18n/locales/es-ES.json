@@ -1,0 +1,153 @@
+{
+  "tabs": {
+    "mouse": "Ratón",
+    "keyboard": "Teclado",
+    "drawing": "Dibujo",
+    "activation": "Activación",
+    "general": "General",
+    "about": "Acerca de"
+  },
+  "mouse": {
+    "title": "Configuración del ratón",
+    "enableClickEffect": "Activar efecto de clic",
+    "clickEffectType": "Tipo de efecto de clic",
+    "scale": "Escala",
+    "speed": "Velocidad",
+    "effects": {
+      "ripple": "Onda",
+      "firework": "Fuegos artificiales",
+      "spiral": "Espiral",
+      "circleStroke": "Círculo",
+      "rectStroke": "Rectángulo"
+    },
+    "messages": {
+      "enabled": "Efecto de clic activado",
+      "disabled": "Efecto de clic desactivado",
+      "typeChanged": "Efecto de clic cambiado a {{type}}",
+      "scaleUpdated": "Escala actualizada",
+      "speedUpdated": "Velocidad de animación actualizada",
+      "saveFailed": "Error al guardar la configuración",
+      "loadFailed": "Error al cargar la configuración",
+      "vipOnly": "El tipo de efecto de clic es una función premium"
+    }
+  },
+  "keyboard": {
+    "title": "Configuración del teclado",
+    "enableKeyboardEcho": "Activar eco de teclado",
+    "enableClickEcho": "Activar eco de ratón",
+    "scale": "Escala",
+    "offsetX": "Desplazamiento X",
+    "offsetY": "Desplazamiento Y",
+    "fgColor": "Color de fuente",
+    "bgColor": "Color de fondo",
+    "messages": {
+      "keyboardEnabled": "Eco de teclado activado",
+      "keyboardDisabled": "Eco de teclado desactivado",
+      "clickEnabled": "Eco de ratón activado",
+      "clickDisabled": "Eco de ratón desactivado",
+      "fgColorUpdated": "Color de fuente actualizado",
+      "bgColorUpdated": "Color de fondo actualizado",
+      "saveFailed": "Error al guardar la configuración",
+      "loadFailed": "Error al cargar la configuración",
+      "fgColorVipOnly": "La configuración del color de fuente es una función premium",
+      "bgColorVipOnly": "La configuración del color de fondo es una función premium"
+    }
+  },
+  "drawing": {
+    "title": "Configuración de dibujo",
+    "toggleMode": "Alternar modo de dibujo",
+    "clearAnnotation": "Borrar anotaciones",
+    "shortcutHelp": "Ayuda de atajos",
+    "messages": {
+      "shortcutUpdated": "Atajo establecido en {{shortcut}}",
+      "saveFailed": "Error al guardar: {{error}}",
+      "loadFailed": "Error al cargar la configuración",
+      "enterDrawMode": "Modo de dibujo activado",
+      "exitDrawMode": "Modo de dibujo desactivado"
+    }
+  },
+  "general": {
+    "title": "Configuración del sistema",
+    "permissionTitle": "Configuración de permisos",
+    "autoStart": "Inicio automático",
+    "language": "Idioma / Language",
+    "accessibilityPermission": "Permiso de accesibilidad",
+    "inputMonitoringPermission": "Permiso de monitoreo de entrada",
+    "authorized": "Autorizado",
+    "requestPermission": "Solicitar permiso",
+    "messages": {
+      "autoStartEnabled": "Inicio automático activado",
+      "autoStartDisabled": "Inicio automático desactivado",
+      "autoStartFailed": "Error al configurar el inicio automático",
+      "grantAccessibilityPermission": "Por favor, otorgue el permiso de accesibilidad en Configuración del Sistema",
+      "grantInputMonitoringPermission": "Por favor, otorgue el permiso de monitoreo de entrada en Configuración del Sistema",
+      "requestPermissionFailed": "Error al solicitar permiso"
+    }
+  },
+  "activation": {
+    "title": "Centro de miembros",
+    "subtitle": {
+      "vip": "Disfruta de los privilegios premium",
+      "normal": "Conviértete en miembro para desbloquear todas las funciones avanzadas"
+    },
+    "status": "Estado actual",
+    "vipMember": "Miembro permanente",
+    "normalVersion": "Versión estándar",
+    "benefits": "Beneficios de membresía",
+    "benefitList": {
+      "noWatermark": "Eliminar marca de agua",
+      "advancedClickEffect": "Efectos de clic avanzados",
+      "advancedKeyboard": "Efectos de teclado avanzados"
+    },
+    "upgradeHint": "Conviértete en miembro para desbloquear más funciones avanzadas",
+    "redeemTitle": "Canjear código de activación",
+    "getCodeHint": "¿No tienes un código de activación? Visita",
+    "bilibiliPage": "BiliBili",
+    "patreonPage": "Patreon",
+    "getCode": "para obtener un código",
+    "codeLabel": "Código de activación",
+    "codePlaceholder": "Introduce tu código de activación de miembro",
+    "activateButton": "Activar ahora",
+    "messages": {
+      "emptyCode": "Por favor, introduce un código de activación",
+      "success": "¡Activación exitosa! Ahora eres miembro premium.",
+      "invalidCode": "Código de activación inválido"
+    }
+  },
+  "about": {
+    "version": "Versión {{version}}",
+    "officialAccount": "Cuenta oficial",
+    "visitWebsite": "Visitar sitio web",
+    "contactUs": "Contáctanos",    "copySystemInfo": "Información del sistema",
+    "copySuccess": "Información del sistema copiada al portapapeles",
+    "copyFailed": "Error al copiar, inténtelo de nuevo",    "copyright": "© {{year}} FioFio Studio. Todos los derechos reservados."
+  },
+  "tray": {
+    "preferences": "Preferencias",
+    "resetWindow": "Restablecer ventana",
+    "website": "Sitio web",
+    "version": "Versión {{version}}",
+    "restart": "Reiniciar",
+    "quit": "Salir"
+  },
+  "keys": {
+    "kp0": "NumPad 0",
+    "kp1": "NumPad 1",
+    "kp2": "NumPad 2",
+    "kp3": "NumPad 3",
+    "kp4": "NumPad 4",
+    "kp5": "NumPad 5",
+    "kp6": "NumPad 6",
+    "kp7": "NumPad 7",
+    "kp8": "NumPad 8",
+    "kp9": "NumPad 9",
+    "kpDelete": "NumPad .",
+    "kpDivide": "NumPad /",
+    "kpMultiply": "NumPad *",
+    "kpMinus": "NumPad -",
+    "kpPlus": "NumPad +",
+    "leftClick": "LClick",
+    "middleClick": "MClick",
+    "rightClick": "RClick"
+  }
+}
