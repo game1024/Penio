@@ -209,3 +209,5 @@ penio/
 - **GitHub Issues**: [問題を報告](https://github.com/game1024/Penio/issues)
 
 ---
+
+[![Star History Chart](https://api.star-history.com/svg?repos=game1024/Penio&type=date&legend=top-left)](https://www.star-history.com/#game1024/Penio&type=date&legend=top-left)

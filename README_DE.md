@@ -209,3 +209,5 @@ Sie können die Entwicklung auch über [GitHub Sponsors](https://github.com/spon
 - **GitHub Issues**: [Problem melden](https://github.com/game1024/Penio/issues)
 
 ---
+
+[![Star History Chart](https://api.star-history.com/svg?repos=game1024/Penio&type=date&legend=top-left)](https://www.star-history.com/#game1024/Penio&type=date&legend=top-left)

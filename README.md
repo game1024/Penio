@@ -213,3 +213,4 @@ penio/
 
 ---
 
+[![Star History Chart](https://api.star-history.com/svg?repos=game1024/Penio&type=date&legend=top-left)](https://www.star-history.com/#game1024/Penio&type=date&legend=top-left)
