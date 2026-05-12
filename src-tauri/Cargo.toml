@@ -1,6 +1,6 @@
 [package]
 name = "penio"
-version = "1.0.0"
+version = "1.0.1"
 description = "A Tauri App"
 authors = ["fiofio"]
 edition = "2021"
