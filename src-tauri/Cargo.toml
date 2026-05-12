@@ -2,7 +2,7 @@
 name = "penio"
 version = "1.0.1"
 description = "A Tauri App"
-authors = ["fiofio"]
+authors = ["game1024"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
