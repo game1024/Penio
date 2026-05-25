@@ -1,6 +1,6 @@
 [package]
 name = "penio"
-version = "1.0.6"
+version = "1.0.7"
 description = "A Tauri App"
 authors = ["game1024"]
 edition = "2021"
@@ -31,6 +31,7 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 tokio = { version = "1", features = ["time"] }
 rdev= { git = "https://github.com/Narsil/rdev", features= ["x11"] }
+enigo = { version = "0.6.1", default-features = false }
 ctrlc = "3.4"
 machine-uid = "0.5"
 

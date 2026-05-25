@@ -1,63 +1,14 @@
+use enigo::{Enigo, Mouse, Settings};
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::thread;
 use std::time::Duration;
 use tauri::{AppHandle, Manager, PhysicalPosition, WebviewUrl, WebviewWindowBuilder};
 
 const APERTURE_LOGICAL_SIZE: f64 = 150.0;
-const POLL_INTERVAL_MS: u64 = 16; // ~60fps
+const POLL_INTERVAL_MS: u64 = 10; // 100Hz
 
 static APERTURE_RUNNING: AtomicBool = AtomicBool::new(false);
 static APERTURE_DISABLED: AtomicBool = AtomicBool::new(false);
-
-// ---------------------------------------------------------------------------
-// Platform-specific cursor position
-// ---------------------------------------------------------------------------
-
-#[cfg(target_os = "macos")]
-fn get_cursor_position() -> (f64, f64) {
-    use cocoa::appkit::NSEvent;
-    use cocoa::base::nil;
-    unsafe {
-        let point = NSEvent::mouseLocation(nil);
-        (point.x, point.y)
-    }
-}
-
-#[cfg(windows)]
-fn get_cursor_position() -> (f64, f64) {
-    use windows::Win32::Foundation::POINT;
-    use windows::Win32::UI::WindowsAndMessaging::GetCursorPos;
-    let mut point = POINT { x: 0, y: 0 };
-    let _ = unsafe { GetCursorPos(&mut point) };
-    (point.x as f64, point.y as f64)
-}
-
-#[cfg(target_os = "linux")]
-fn get_cursor_position(display: *mut x11::xlib::Display, root: x11::xlib::Window) -> (f64, f64) {
-    unsafe {
-        let mut root_return: x11::xlib::Window = 0;
-        let mut child_return: x11::xlib::Window = 0;
-        let mut root_x: i32 = 0;
-        let mut root_y: i32 = 0;
-        let mut win_x: i32 = 0;
-        let mut win_y: i32 = 0;
-        let mut mask_return: u32 = 0;
-
-        x11::xlib::XQueryPointer(
-            display,
-            root,
-            &mut root_return,
-            &mut child_return,
-            &mut root_x,
-            &mut root_y,
-            &mut win_x,
-            &mut win_y,
-            &mut mask_return,
-        );
-
-        (root_x as f64, root_y as f64)
-    }
-}
 
 // ---------------------------------------------------------------------------
 // Window creation
@@ -131,43 +82,25 @@ pub fn start_cursor_polling(app_handle: AppHandle) {
     }
 
     thread::spawn(move || {
-        #[cfg(target_os = "linux")]
-        let (display, root) = unsafe {
-            let d = x11::xlib::XOpenDisplay(std::ptr::null());
-            if d.is_null() {
-                eprintln!("Failed to open X11 display for aperture");
-                APERTURE_RUNNING.store(false, Ordering::SeqCst);
-                return;
-            }
-            let r = x11::xlib::XDefaultRootWindow(d);
-            (d, r)
-        };
+        let enigo = Enigo::new(&Settings::default()).unwrap();
 
         loop {
             if !APERTURE_RUNNING.load(Ordering::SeqCst) {
                 break;
             }
 
-            #[cfg(not(target_os = "linux"))]
-            let (cx, cy) = get_cursor_position();
-
-            #[cfg(target_os = "linux")]
-            let (cx, cy) = get_cursor_position(display, root);
-
-            if let Some(window) = app_handle.get_webview_window("aperture") {
-                if let Ok(size) = window.inner_size() {
-                    let x = cx - size.width as f64 / 2.0;
-                    let y = cy - size.height as f64 / 2.0;
-                    let _ = window.set_position(PhysicalPosition::new(x, y));
+            if let Ok((cx, cy)) = enigo.location() {
+                if let Some(window) = app_handle.get_webview_window("aperture") {
+                    if let Ok(size) = window.inner_size() {
+                        let sf = window.scale_factor().unwrap_or(1.0);
+                        let x = cx as f64 * sf - size.width as f64 / 2.0;
+                        let y = cy as f64 * sf - size.height as f64 / 2.0;
+                        let _ = window.set_position(PhysicalPosition::new(x, y));
+                    }
                 }
             }
 
             std::thread::sleep(Duration::from_millis(POLL_INTERVAL_MS));
-        }
-
-        #[cfg(target_os = "linux")]
-        unsafe {
-            x11::xlib::XCloseDisplay(display);
         }
     });
 
