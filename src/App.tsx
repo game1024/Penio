@@ -183,7 +183,7 @@ function App() {
         {/* 自定义标题栏 */}
         <Box className="titlebar" sx={{ backgroundColor: 'background.paper' }}>
           <div className="titlebar-title-container">
-            <span className="titlebar-title">控制台</span>
+            <span className="titlebar-title">{t('tabs.console')}</span>
           </div>
           <div className="titlebar-controls">
             <IconButton className="titlebar-btn" onClick={handleMinimize} size="small" sx={{ borderRadius: 0, '&:hover': { backgroundColor: 'rgba(128,128,128,0.25)' } }}>
