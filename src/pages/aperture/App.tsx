@@ -452,7 +452,7 @@ function drawRay(ctx: CanvasRenderingContext2D, t: number, s: number) {
   // Outer halo ring — filled band with radial gradient (transparent on both edges, bright in middle)
   const haloAlpha = 0.05 + 0.12 * breathe;
   const outerR = maxR * 0.9 + 5;
-  const innerR = maxR * 0.9 - 5;
+  const innerR = maxR * 0.9 - 25;
   const haloGrad = ctx.createRadialGradient(cx, cy, innerR, cx, cy, outerR);
   haloGrad.addColorStop(0, "rgba(255,200,60,0)");
   haloGrad.addColorStop(0.4, `rgba(255,200,60,${haloAlpha})`);

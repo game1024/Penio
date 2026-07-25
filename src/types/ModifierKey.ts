@@ -235,5 +235,5 @@ export const KeyLabel = async (key: string): Promise<string> => {
   if (typeof label === 'function') {
     return label();
   }
-  return label || key;
+  return label || key.replace(/^Key/, '');
 };

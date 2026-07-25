@@ -31,6 +31,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { useSnackbar } from "../contexts/SnackbarContext";
 import githubIcon from "../assets/github.svg";
+import bmcIcon from "../assets/bmc.svg";
 
 function 关于页面() {
     const { t } = useTranslation();
@@ -48,6 +49,7 @@ function 关于页面() {
         platformVersion: "...",
     });
     const githubUrl = "https://github.com/game1024/Penio";
+    const bmcUrl = "https://buymeacoffee.com/game1024";
 
     useEffect(() => {
         getName().then(setAppName);
@@ -70,6 +72,10 @@ function 关于页面() {
 
     const handleGithubClick = async () => {
         await open(githubUrl);
+    };
+
+    const handleBmcClick = async () => {
+        await open(bmcUrl);
     };
 
     const handleCopySystemInfo = async () => {
@@ -150,11 +156,9 @@ function 关于页面() {
                         sx={{
                             width: '3rem',
                             height: '3rem',
-                            backgroundColor: '#F6F8FA',
-                            border: '1px solid #D0D7DE',
+                            backgroundColor: 'background.socialButton',
                             '&:hover': {
-                                backgroundColor: '#EAEEF2',
-                                border: '1px solid #24292F',
+                                backgroundColor: 'background.socialButtonHover',
                             },
                         }}
                     >
@@ -162,6 +166,27 @@ function 关于页面() {
                             component="img"
                             src={githubIcon}
                             alt="GitHub"
+                            sx={{ width: '1.5rem', height: '1.5rem' }}
+                        />
+                    </IconButton>
+                </Tooltip>
+
+                <Tooltip title="Buy Me a Coffee" arrow>
+                    <IconButton
+                        onClick={handleBmcClick}
+                        sx={{
+                            width: '3rem',
+                            height: '3rem',
+                            backgroundColor: 'background.socialButton',
+                            '&:hover': {
+                                backgroundColor: 'background.socialButtonHover',
+                            },
+                        }}
+                    >
+                        <Box
+                            component="img"
+                            src={bmcIcon}
+                            alt="Buy Me a Coffee"
                             sx={{ width: '1.5rem', height: '1.5rem' }}
                         />
                     </IconButton>

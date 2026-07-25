@@ -165,6 +165,14 @@ export const updateSettings = async (newSettings: Partial<AppSettings>) => {
         }
     }
 
+    if (newSettings.theme) {
+        try {
+            await emit('theme-updated', { theme: updatedSettings.theme });
+        } catch (error) {
+            console.error('Failed to emit theme-updated event:', error);
+        }
+    }
+
     const { register, unregister } = useShortcut();
     if (newSettings.drawing) {
         try {

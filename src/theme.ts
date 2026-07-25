@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 import { green } from '@mui/material/colors';
 
-// 扩展 PaletteColor 接口以支持色阶
+// 扩展 PaletteColor 和 TypeBackground 接口
 declare module '@mui/material/styles' {
   interface PaletteColor {
     50?: string;
@@ -15,7 +15,7 @@ declare module '@mui/material/styles' {
     800?: string;
     900?: string;
   }
-  
+
   interface SimplePaletteColorOptions {
     50?: string;
     100?: string;
@@ -28,21 +28,61 @@ declare module '@mui/material/styles' {
     800?: string;
     900?: string;
   }
+
+  interface TypeBackground {
+    socialButton: string;
+    socialButtonHover: string;
+  }
 }
 
-const theme = createTheme({
+const sharedTheme = {
   typography: {
     fontFamily: '"Fira Code", "Noto Sans SC", "Noto Sans TC", "Noto Sans", sans-serif',
   },
+};
+
+const sharedPalette = {
+  success: {
+    main: '#2e7d32',
+    light: '#4caf50',
+    dark: '#1b5e20',
+    contrastText: '#fff',
+    ...green,
+  },
+};
+
+const lightTheme = createTheme({
+  ...sharedTheme,
   palette: {
-    success: {
-      main: '#2e7d32', // MUI 默认 success.main
-      light: '#4caf50',
-      dark: '#1b5e20',
-      contrastText: '#fff',
-      ...green, // 注入 50-900 的色阶
+    mode: 'light',
+    ...sharedPalette,
+    background: {
+      default: '#e8e8e8',
+      paper: '#ffffff',
+      socialButton: '#ffffff',
+      socialButtonHover: '#e8e8e8',
     },
   },
 });
 
+const darkTheme = createTheme({
+  ...sharedTheme,
+  palette: {
+    mode: 'dark',
+    ...sharedPalette,
+    background: {
+      default: '#0a0a0a',
+      paper: '#1e1e1e',
+      socialButton: '#ffffff',
+      socialButtonHover: '#cccccc',
+    },
+  },
+});
+
+export function getTheme(mode: 'light' | 'dark') {
+  return mode === 'dark' ? darkTheme : lightTheme;
+}
+
+// 保持向后兼容
+const theme = lightTheme;
 export default theme;

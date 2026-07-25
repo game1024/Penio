@@ -314,7 +314,7 @@ function 键盘设置页面() {
         <Box>
             <Typography variant="h5" sx={{ m: 1, mb: 3, display: "block" }}>{t('keyboard.title')}</Typography>
 
-            <Box sx={{ p: 2, backgroundColor: '#ffffff', borderRadius: 2 }}>
+            <Box sx={{ p: 2, backgroundColor: 'background.paper', borderRadius: 2 }}>
                 <Stack direction="column" spacing={3} sx={{ p: 2 }}>
                     <SettingField
                         label={t('keyboard.enableKeyboardEcho')}
@@ -876,12 +876,12 @@ function 鼠标设置页面() {
         <Box>
             <Typography variant="h5" sx={{ m: 1, mb: 3, display: "block" }}>{t('mouse.title')}</Typography>
 
-            <Box sx={{ p: 2, backgroundColor: '#ffffff', borderRadius: 2 }}>
+            <Box sx={{ p: 2, backgroundColor: 'background.paper', borderRadius: 2 }}>
                 <Stack direction="column" spacing={3} sx={{ p: 2 }}>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                      <Box sx={{ flex: 1, borderTop: '1px solid #e0e0e0' }} />
-                      <Typography variant="caption" sx={{ mx: 1.5, color: '#999' }}>{t('mouse.clickEffect')}</Typography>
-                      <Box sx={{ flex: 1, borderTop: '1px solid #e0e0e0' }} />
+                      <Box sx={{ flex: 1, borderTop: 1, borderColor: 'divider' }} />
+                      <Typography variant="caption" sx={{ mx: 1.5, color: 'text.secondary' }}>{t('mouse.clickEffect')}</Typography>
+                      <Box sx={{ flex: 1, borderTop: 1, borderColor: 'divider' }} />
                     </Box>
 
                     <SettingField
@@ -1102,9 +1102,9 @@ function 鼠标设置页面() {
                     />
 
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                      <Box sx={{ flex: 1, borderTop: '1px solid #e0e0e0' }} />
-                      <Typography variant="caption" sx={{ mx: 1.5, color: '#999' }}>{t('mouse.aperture')}</Typography>
-                      <Box sx={{ flex: 1, borderTop: '1px solid #e0e0e0' }} />
+                      <Box sx={{ flex: 1, borderTop: 1, borderColor: 'divider' }} />
+                      <Typography variant="caption" sx={{ mx: 1.5, color: 'text.secondary' }}>{t('mouse.aperture')}</Typography>
+                      <Box sx={{ flex: 1, borderTop: 1, borderColor: 'divider' }} />
                     </Box>
 
                     {/* 鼠标光圈 */}
@@ -1265,7 +1265,7 @@ function 绘图设置页面() {
         <Box>
             <Typography variant="h5" sx={{ m: 1, mb: 3, display: "block" }}>{t('drawing.title')}</Typography>
 
-            <Box sx={{ p: 2, backgroundColor: '#ffffff', borderRadius: 2 }}>
+            <Box sx={{ p: 2, backgroundColor: 'background.paper', borderRadius: 2 }}>
                 <Stack direction="column" spacing={3} sx={{ p: 2 }}>
                     <SettingField
                         label={t('drawing.toggleMode')}
@@ -1311,6 +1311,7 @@ function 绘图设置页面() {
 function 通用设置页面() {
     const { t } = useTranslation();
     const [enableAutoStart, setEnableAutoStart] = useState(false);
+    const [theme, setTheme] = useState<'light' | 'dark' | 'auto'>('auto');
     const [hasAccessibilityPermission, setHasAccessibilityPermission] = useState(false);
     const [hasInputMonitoringPermission, setHasInputMonitoringPermission] = useState(false);
     const { notify } = useSnackbar();
@@ -1320,6 +1321,8 @@ function 通用设置页面() {
     // 加载设置
     useEffect(() => {
         const loadSettings = async () => {
+            const settings = await getSettings();
+            setTheme(settings.theme || 'auto');
             const isEnabled = await AutoStart.isEnabled();
             setEnableAutoStart(isEnabled);
 
@@ -1359,6 +1362,30 @@ function 通用设置页面() {
         }
     }
 
+    // 处理主题切换
+    const handleThemeChange = async (event: any) => {
+        const themeMap: Record<number, 'light' | 'dark' | 'auto'> = {
+            0: 'light',
+            1: 'dark',
+            2: 'auto',
+        };
+        const newTheme = themeMap[event.target.value as number];
+        setTheme(newTheme);
+
+        try {
+            await updateSettings({ theme: newTheme });
+            notify(t('general.messages.themeUpdated', { theme: t(`general.theme${newTheme.charAt(0).toUpperCase() + newTheme.slice(1)}`) }), 'success');
+        } catch (error) {
+            console.error('保存主题设置失败:', error);
+            notify(t('general.messages.saveFailed'), 'error');
+        }
+    };
+
+    const getThemeValue = () => {
+        const valueMap: Record<string, number> = { light: 0, dark: 1, auto: 2 };
+        return valueMap[theme];
+    };
+
     // 请求辅助功能权限
     const handleRequestAccessibilityPermission = async () => {
         try {
@@ -1393,7 +1420,7 @@ function 通用设置页面() {
                 }}>{t('general.permissionTitle')}</Typography>
             <Box sx={{
                 p: 2,
-                backgroundColor: '#ffffff',
+                backgroundColor: 'background.paper',
                 borderRadius: 2,
                 display: isMac() ? 'block' : 'none',
                 mb: 4
@@ -1437,9 +1464,32 @@ function 通用设置页面() {
 
             <Typography variant="h5" sx={{ m: 1, mb: 3, display: "block" }}>{t('general.title')}</Typography>
 
-            <Box sx={{ p: 2, backgroundColor: '#ffffff', borderRadius: 2 }}>
+            <Box sx={{ p: 2, backgroundColor: 'background.paper', borderRadius: 2 }}>
                 <Stack direction="column" spacing={3} sx={{ p: 2 }}>
                     <LanguageSetting />
+                    <SettingField
+                        label={t('general.theme')}
+                        value={
+                            <Select
+                                id="theme-select"
+                                value={getThemeValue()}
+                                onChange={handleThemeChange}
+                                size="small"
+                                MenuProps={{
+                                    slotProps: {
+                                        list: {
+                                            dense: true,
+                                        }
+                                    }
+                                }}
+                                sx={{ minWidth: '8rem' }}
+                            >
+                                <MenuItem value={0}>{t('general.themeLight')}</MenuItem>
+                                <MenuItem value={1}>{t('general.themeDark')}</MenuItem>
+                                <MenuItem value={2}>{t('general.themeAuto')}</MenuItem>
+                            </Select>
+                        }
+                    />
                     <SettingField
                         label={t('general.autoStart')}
                         value={

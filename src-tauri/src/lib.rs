@@ -27,7 +27,6 @@ use tauri::{AppHandle, Emitter, Manager, WindowEvent};
 use tokio::time::{interval, Duration};
 
 mod aperture;
-mod tray;
 
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
 

@@ -55,10 +55,10 @@ function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
 
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         flexGrow: 1,
-        backgroundColor: '#eeeeee',
+        backgroundColor: 'background.default',
         overflowY: 'auto',
         height: '98vh',
       }}
@@ -73,7 +73,7 @@ function TabPanel(props: TabPanelProps) {
           {children}
         </Box>
       )}
-    </div>
+    </Box>
   );
 }
 
@@ -177,7 +177,7 @@ function App() {
           value={tabno}
           onChange={(_, newValue) => setTabno(newValue)}
           orientation="vertical"
-          sx={{ minWidth: '6rem' }}>
+          sx={{ minWidth: '6rem', backgroundColor: 'background.paper' }}>
           <Tab value={TabIndex.鼠标} icon={<MouseIcon />} label={t('tabs.mouse')} />
           <Tab value={TabIndex.键盘} icon={<KeyboardIcon />} label={t('tabs.keyboard')} />
           <Tab value={TabIndex.绘图} icon={<BrushIcon />} label={t('tabs.drawing')} />

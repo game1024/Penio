@@ -37,6 +37,24 @@ import { useDrawingSettings } from "../../hooks/useDrawingSettings";
 import { KeyLabel, MODIFIER_KEY_LIST, IGNORE_KEY_LIST, MOUSE_CLICK_KEYS } from "../../types/ModifierKey";
 import { Alert, Snackbar, Zoom } from "@mui/material";
 import i18n from "../../i18n";
+import mouseLeftSvg from "../../assets/mouse-left-button-svgrepo-com.svg?raw";
+import mouseRightSvg from "../../assets/mouse-right-button-svgrepo-com.svg?raw";
+import mouseMiddleSvg from "../../assets/mouse-svgrepo-com.svg?raw";
+
+// Patch SVGs to use currentColor so they inherit the text color
+function patchSvgColor(svg: string): string {
+  return svg
+    .replace(/<svg\b/, '<svg style="width:100%;height:100%"')
+    .replace(/\bfill="#[^"]*"/g, 'fill="currentColor"')
+    .replace(/\bfill="(?!currentColor|none)[^"]*"/g, 'fill="currentColor"')
+    .replace(/\bstroke="#[^"]*"/g, 'stroke="currentColor"');
+}
+
+const MOUSE_SVG_MAP: Record<string, string> = {
+  LClick: patchSvgColor(mouseLeftSvg),
+  RClick: patchSvgColor(mouseRightSvg),
+  MClick: patchSvgColor(mouseMiddleSvg),
+};
 
 function App() {
   // 从 store 加载鼠标设置
@@ -65,6 +83,9 @@ function App() {
     offsetY: 0,
     scale: 1.0
   })
+
+  const allKeys = [...keyboardPanel.modifierKeys, ...keyboardPanel.keys];
+  const hasContent = allKeys.length > 0;
 
   useEffect(() => {
     if (keyboardSettings?.preview) {
@@ -314,6 +335,17 @@ function App() {
           return;
         }
 
+        // 处理鼠标按键
+        if (MOUSE_CLICK_KEYS.includes(event.payload.key)) {
+          setKeyboardPanel(prev => {
+            if (!prev.keys.includes(event.payload.key)) {
+              return { ...prev, keys: [...prev.keys, event.payload.key] };
+            }
+            return prev;
+          });
+          return;
+        }
+
         // 这里可以根据需要处理键盘事件
         if (MODIFIER_KEY_LIST.includes(event.payload.key)) {
           const keyName = await KeyLabel(event.payload.key);
@@ -338,7 +370,12 @@ function App() {
       // 监听键盘释放事件
       const unlistenKeyRelease = await appWindow.listen<{ key: string }>('key-release', async (event) => {
         console.log('key-release event received:', event);
-        // 这里可以根据需要处理键盘释放事件
+
+        // 处理鼠标按键释放
+        if (MOUSE_CLICK_KEYS.includes(event.payload.key)) {
+          setKeyboardPanel(prev => ({ ...prev, keys: prev.keys.filter(k => k !== event.payload.key) }));
+          return;
+        }
 
         if (MODIFIER_KEY_LIST.includes(event.payload.key)) {
           const keyName = await KeyLabel(event.payload.key);
@@ -425,7 +462,7 @@ function App() {
           zIndex: 999999
         }}>
 
-        {/* 键盘按键信息显示区域 */}
+        {/* 按键信息显示区域（键盘 + 鼠标统一） */}
         <div
           style={{
             padding: '0.5rem 1rem',
@@ -437,17 +474,41 @@ function App() {
             alignItems: 'center',
             gap: '0.2rem',
             transform: `translate(${keyboardPanel.offsetX}em, ${-keyboardPanel.offsetY}em) scale(${keyboardPanel.scale || 1.0})`,
-            opacity: keyboardPanel.modifierKeys.length > 0 || keyboardPanel.keys.length > 0 ? 1 : 0.0,
+            opacity: hasContent ? 1 : 0.0,
           }}>
 
-          <div
-            style={{
-              fontFamily: 'Fira Code',
-              fontSize: '3rem', 
-              fontWeight: 'bold'
-            }}>
-            {keyboardPanel.modifierKeys.length > 0 || keyboardPanel.keys.length > 0 ? `[ ${[...keyboardPanel.modifierKeys, ...keyboardPanel.keys].join('+')} ]` : ''}
-          </div>
+          {hasContent && (
+            <div
+              style={{
+                fontFamily: 'Fira Code',
+                fontSize: '3rem',
+                fontWeight: 'bold',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+              }}>
+              <span>[</span>
+              {allKeys.map((key, i) => (
+                <span key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                  {MOUSE_SVG_MAP[key] ? (
+                    <span
+                      style={{
+                        width: '3rem',
+                        height: '3rem',
+                        display: 'inline-flex',
+                        color: keyboardSettings.fgColor || 'rgba(190,255,255,1.0)',
+                      }}
+                      dangerouslySetInnerHTML={{ __html: MOUSE_SVG_MAP[key] }}
+                    />
+                  ) : (
+                    <span>{key}</span>
+                  )}
+                  {i < allKeys.length - 1 && <span>+</span>}
+                </span>
+              ))}
+              <span>]</span>
+            </div>
+          )}
 
         </div>
       </div>
