@@ -1,10 +1,8 @@
 /* 使用本地字体包，移除 jsDelivr CDN 加载 */
 
-body {
+html, body {
     margin: 0;
-}
-
-html {
+    background: transparent !important;
     font-family: "Fira Code", "Noto Sans SC", "Noto Sans TC", "Noto Sans", sans-serif;
 }
 
@@ -35,4 +33,55 @@ html {
 * {
     scrollbar-width: thin;
     scrollbar-color: rgba(128, 128, 128, 0.35) transparent;
+}
+
+/* ── 自定义标题栏 ────────────────────────────────── */
+.titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    user-select: none;
+    flex-shrink: 0;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    -webkit-app-region: drag;
+}
+
+.titlebar-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.titlebar-title {
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.titlebar-controls {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-app-region: no-drag;
+}
+
+.titlebar-btn {
+    width: 44px;
+    height: 100%;
+    border-radius: 0;
+    color: inherit;
+}
+
+.titlebar-btn:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.titlebar-btn-close:hover {
+    background-color: #e81123;
+    color: #fff;
 }

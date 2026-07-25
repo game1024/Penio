@@ -1,0 +1,194 @@
+{
+  "tabs": {
+    "mouse": "माउस",
+    "keyboard": "कीबोर्ड",
+    "drawing": "ड्राइंग",
+    "activation": "सक्रियण",
+    "general": "सामान्य",
+    "about": "परिचय"
+  },
+  "mouse": {
+    "title": "माउस सेटिंग्स",
+    "clickEffect": "क्लिक प्रभाव",
+    "enableClickEffect": "क्लिक प्रभाव सक्षम करें",
+    "clickEffectType": "क्लिक प्रभाव प्रकार",
+    "scale": "पैमाना",
+    "speed": "गति",
+    "primaryColor": "प्राथमिक रंग",
+    "secondaryColor": "द्वितीयक रंग",
+    "aperture": "एपर्चर",
+    "enableAperture": "कर्सर एपर्चर सक्षम करें",
+    "apertureStyle": "एपर्चर शैली",
+    "enableApertureAnimation": "एपर्चर एनिमेशन",
+    "apertureScale": "एपर्चर आकार",
+    "effects": {
+      "ripple": "लहर",
+      "firework": "आतिशबाज़ी",
+      "spiral": "सर्पिल",
+      "circleStroke": "वृत्त",
+      "rectStroke": "आयत"
+    },
+    "apertureStyles": {
+      "neon": "नियॉन",
+      "golden": "सुनहरा",
+      "aurora": "अरोरा",
+      "fire": "अग्नि",
+      "frost": "तुषार",
+      "rainbow": "इंद्रधनुष",
+      "shadow": "छाया",
+      "sparkle": "चमक",
+      "firefly": "जुगनू",
+      "ripple": "लहर",
+      "spinner": "स्पिनर",
+      "swirl": "भंवर",
+      "ray": "किरण"
+    },
+    "messages": {
+      "enabled": "क्लिक प्रभाव सक्षम हुआ",
+      "disabled": "क्लिक प्रभाव अक्षम हुआ",
+      "typeChanged": "क्लिक प्रभाव {{type}} में बदला गया",
+      "scaleUpdated": "पैमाना अपडेट हुआ",
+      "speedUpdated": "गति अपडेट हुई",
+      "primaryColorUpdated": "प्राथमिक रंग अपडेट हुआ",
+      "secondaryColorUpdated": "द्वितीयक रंग अपडेट हुआ",
+      "saveFailed": "सेटिंग्स सहेजने में विफल",
+      "loadFailed": "सेटिंग्स लोड करने में विफल",
+      "vipOnly": "क्लिक प्रभाव प्रकार एक VIP सुविधा है",
+      "apertureEnabled": "कर्सर एपर्चर सक्षम हुआ",
+      "apertureDisabled": "कर्सर एपर्चर अक्षम हुआ",
+      "apertureStyleChanged": "एपर्चर शैली {{style}} में बदली गई",
+      "apertureAnimationEnabled": "एपर्चर एनिमेशन सक्षम हुआ",
+      "apertureAnimationDisabled": "एपर्चर एनिमेशन अक्षम हुआ",
+      "apertureSizeUpdated": "एपर्चर आकार अपडेट हुआ"
+    }
+  },
+  "keyboard": {
+    "title": "कीबोर्ड सेटिंग्स",
+    "enableKeyboardEcho": "कीबोर्ड इको सक्षम करें",
+    "enableClickEcho": "क्लिक इको सक्षम करें",
+    "scale": "पैमाना",
+    "offsetX": "X ऑफ़सेट",
+    "offsetY": "Y ऑफ़सेट",
+    "fgColor": "अक्षर रंग",
+    "bgColor": "पृष्ठभूमि रंग",
+    "messages": {
+      "keyboardEnabled": "कीबोर्ड इको सक्षम हुआ",
+      "keyboardDisabled": "कीबोर्ड इको अक्षम हुआ",
+      "clickEnabled": "क्लिक इको सक्षम हुआ",
+      "clickDisabled": "क्लिक इको अक्षम हुआ",
+      "fgColorUpdated": "अक्षर रंग अपडेट हुआ",
+      "bgColorUpdated": "पृष्ठभूमि रंग अपडेट हुआ",
+      "saveFailed": "सेटिंग्स सहेजने में विफल",
+      "loadFailed": "सेटिंग्स लोड करने में विफल",
+      "fgColorVipOnly": "अक्षर रंग सेटिंग एक VIP सुविधा है",
+      "bgColorVipOnly": "पृष्ठभूमि रंग सेटिंग एक VIP सुविधा है"
+    }
+  },
+  "drawing": {
+    "title": "ड्राइंग सेटिंग्स",
+    "toggleMode": "ड्राइंग मोड टॉगल करें",
+    "clearAnnotation": "एनोटेशन साफ़ करें",
+    "shortcutHelp": "शॉर्टकट सहायता",
+    "toolbarShortcut": "टूलबार शॉर्टकट",
+    "messages": {
+      "shortcutUpdated": "शॉर्टकट {{shortcut}} पर सेट हुआ",
+      "saveFailed": "सेटिंग्स सहेजने में विफल: {{error}}",
+      "loadFailed": "सेटिंग्स लोड करने में विफल",
+      "enterDrawMode": "ड्राइंग मोड में प्रवेश",
+      "exitDrawMode": "ड्राइंग मोड से बाहर",
+      "toolbarShown": "टूलबार दिखाया गया ({{shortcut}} टॉगल)",
+      "toolbarHidden": "टूलबार छिपाया गया ({{shortcut}} पुनर्स्थापित)"
+    }
+  },
+  "general": {
+    "title": "सिस्टम सेटिंग्स",
+    "permissionTitle": "अनुमति सेटिंग्स",
+    "autoStart": "स्वतः प्रारंभ",
+    "theme": "थीम",
+    "themeLight": "हल्का",
+    "themeDark": "गहरा",
+    "themeAuto": "स्वतः",
+    "language": "भाषा / Language",
+    "accessibilityPermission": "एक्सेसिबिलिटी अनुमति",
+    "inputMonitoringPermission": "इनपुट मॉनिटरिंग अनुमति",
+    "authorized": "अधिकृत",
+    "requestPermission": "अनुमति अनुरोध करें",
+    "messages": {
+      "autoStartEnabled": "स्वतः प्रारंभ सक्षम हुआ",
+      "autoStartDisabled": "स्वतः प्रारंभ अक्षम हुआ",
+      "autoStartFailed": "स्वतः प्रारंभ सेट करने में विफल",
+      "saveFailed": "सेटिंग्स सहेजने में विफल",
+      "themeUpdated": "थीम {{theme}} में बदली गई",
+      "grantAccessibilityPermission": "कृपया सिस्टम सेटिंग्स में एक्सेसिबिलिटी अनुमति प्रदान करें",
+      "grantInputMonitoringPermission": "कृपया सिस्टम सेटिंग्स में इनपुट मॉनिटरिंग अनुमति प्रदान करें",
+      "requestPermissionFailed": "अनुमति अनुरोध विफल"
+    }
+  },
+  "activation": {
+    "title": "सदस्य केंद्र",
+    "subtitle": {
+      "vip": "सभी VIP सुविधाओं का आनंद लें",
+      "normal": "सभी प्रीमियम सुविधाएँ अनलॉक करने के लिए सदस्यता सक्रिय करें"
+    },
+    "status": "वर्तमान स्थिति",
+    "vipMember": "आजीवन VIP",
+    "normalVersion": "मुफ़्त संस्करण",
+    "benefits": "आपके VIP लाभ",
+    "benefitList": {
+      "noWatermark": "वॉटरमार्क मुक्त",
+      "advancedClickEffect": "उन्नत क्लिक प्रभाव",
+      "advancedKeyboard": "उन्नत कीबोर्ड प्रभाव"
+    },
+    "upgradeHint": "अधिक सुविधाएँ अनलॉक करने के लिए सदस्यता सक्रिय करें",
+    "redeemTitle": "सक्रियण कोड रिडीम करें",
+    "getCodeHint": "सक्रियण कोड नहीं है? विज़िट करें",
+    "bilibiliPage": "BiliBili",
+    "getCode": "कोड प्राप्त करने के लिए",
+    "codeLabel": "सक्रियण कोड",
+    "codePlaceholder": "अपना सदस्यता सक्रियण कोड दर्ज करें",
+    "activateButton": "अभी सक्रिय करें",
+    "messages": {
+      "emptyCode": "कृपया सक्रियण कोड दर्ज करें",
+      "success": "सक्रियण सफल! अब आप VIP सदस्य हैं।",
+      "invalidCode": "अमान्य सक्रियण कोड"
+    }
+  },
+  "about": {
+    "version": "संस्करण {{version}}",
+    "officialAccount": "आधिकारिक खाता",
+    "visitWebsite": "वेबसाइट पर जाएँ",
+    "contactUs": "संपर्क करें",
+    "copySystemInfo": "सिस्टम जानकारी",
+    "copySuccess": "सिस्टम जानकारी क्लिपबोर्ड पर कॉपी की गई",
+    "copyFailed": "कॉपी विफल, कृपया पुनः प्रयास करें",
+    "copyright": "© {{year}} FioFio Studio. सर्वाधिकार सुरक्षित।"
+  },
+  "tray": {
+    "preferences": "प्राथमिकताएँ",
+    "resetWindow": "विंडो रीसेट करें",
+    "website": "GitHub",
+    "version": "संस्करण {{version}}",
+    "restart": "पुनः आरंभ करें",
+    "quit": "बाहर निकलें"
+  },
+  "keys": {
+    "kp0": "नमपैड 0",
+    "kp1": "नमपैड 1",
+    "kp2": "नमपैड 2",
+    "kp3": "नमपैड 3",
+    "kp4": "नमपैड 4",
+    "kp5": "नमपैड 5",
+    "kp6": "नमपैड 6",
+    "kp7": "नमपैड 7",
+    "kp8": "नमपैड 8",
+    "kp9": "नमपैड 9",
+    "kpDelete": "नमपैड .",
+    "kpDivide": "नमपैड /",
+    "kpMultiply": "नमपैड *",
+    "kpMinus": "नमपैड -",
+    "kpPlus": "नमपैड +",
+    "leftClick": "बायाँ क्लिक",
+    "middleClick": "मध्य क्लिक",
+    "rightClick": "दायाँ क्लिक"
+  }
+}

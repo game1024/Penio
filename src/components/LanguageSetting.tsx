@@ -57,6 +57,8 @@ export function LanguageSetting() {
           <MenuItem value="fr-FR">Français</MenuItem>
           <MenuItem value="ja-JP">日本語</MenuItem>
           <MenuItem value="ko-KR">한국어</MenuItem>
+          <MenuItem value="ru-RU">Русский</MenuItem>
+          <MenuItem value="hi-IN">हिन्दी</MenuItem>
         </Select>
       }
     />

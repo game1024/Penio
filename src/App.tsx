@@ -27,6 +27,7 @@ import "./App.css";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
 import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
 import { initLocale } from './i18n';
@@ -37,6 +38,9 @@ import KeyboardIcon from '@mui/icons-material/Keyboard';
 import BrushIcon from '@mui/icons-material/Brush';
 import InfoIcon from '@mui/icons-material/Info';
 import SettingsIcon from '@mui/icons-material/Settings';
+import RemoveIcon from '@mui/icons-material/Remove';
+import CropSquareIcon from '@mui/icons-material/CropSquare';
+import CloseIcon from '@mui/icons-material/Close';
 
 import { 关于页面, 鼠标设置页面, 键盘设置页面, 绘图设置页面, 通用设置页面 } from "./components/Settings";
 import { TabIndex } from "./types/TabIndex";
@@ -82,7 +86,6 @@ function App() {
   const { createTray, updateTray } = useTray();
   const { initShortcut } = useShortcut();
   const { initMachineId } = useMachineId();
-
   // 初始化语言设置、托盘、快捷键、机器码
   useEffect(() => {
     const initialize = async () => {
@@ -95,9 +98,13 @@ function App() {
       await initShortcut();
       await initMachineId();
     };
-    
+
     initialize().catch(console.error);
   }, [])
+
+  const handleMinimize = () => getCurrentWindow().minimize();
+  const handleMaximize = () => getCurrentWindow().toggleMaximize();
+  const handleClose = () => getCurrentWindow().hide();
 
   // 监听语言更新，更新托盘菜单
   useEffect(() => {
@@ -172,7 +179,27 @@ function App() {
 
   return (
     <SnackbarProvider>
-      <main className="console-container" style={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', height: '100vh', borderRadius: '8px', overflow: 'hidden' }}>
+        {/* 自定义标题栏 */}
+        <Box className="titlebar" sx={{ backgroundColor: 'background.paper' }}>
+          <div className="titlebar-title-container">
+            <span className="titlebar-title">控制台</span>
+          </div>
+          <div className="titlebar-controls">
+            <IconButton className="titlebar-btn" onClick={handleMinimize} size="small" sx={{ borderRadius: 0, '&:hover': { backgroundColor: 'rgba(128,128,128,0.25)' } }}>
+              <RemoveIcon sx={{ fontSize: 14 }} />
+            </IconButton>
+            <IconButton className="titlebar-btn" onClick={handleMaximize} size="small" sx={{ borderRadius: 0, '&:hover': { backgroundColor: 'rgba(128,128,128,0.25)' } }}>
+              <CropSquareIcon sx={{ fontSize: 14 }} />
+            </IconButton>
+            <IconButton className="titlebar-btn titlebar-btn-close" onClick={handleClose} size="small" sx={{ borderRadius: 0, '&:hover': { backgroundColor: '#e81123', color: '#fff' } }}>
+              <CloseIcon sx={{ fontSize: 14 }} />
+            </IconButton>
+          </div>
+        </Box>
+
+        {/* 主体内容 */}
+        <main className="console-container" style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
         <Tabs
           value={tabno}
           onChange={(_, newValue) => setTabno(newValue)}
@@ -200,7 +227,8 @@ function App() {
         <TabPanel value={tabno} index={TabIndex.关于}>
           <关于页面 />
         </TabPanel>
-      </main>
+        </main>
+      </Box>
     </SnackbarProvider>
   )
 }

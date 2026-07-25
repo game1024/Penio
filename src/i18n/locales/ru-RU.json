@@ -1,0 +1,194 @@
+{
+  "tabs": {
+    "mouse": "Мышь",
+    "keyboard": "Клавиатура",
+    "drawing": "Рисование",
+    "activation": "Активация",
+    "general": "Общие",
+    "about": "О программе"
+  },
+  "mouse": {
+    "title": "Настройки мыши",
+    "clickEffect": "Эффект клика",
+    "enableClickEffect": "Включить эффект клика",
+    "clickEffectType": "Тип эффекта клика",
+    "scale": "Масштаб",
+    "speed": "Скорость",
+    "primaryColor": "Основной цвет",
+    "secondaryColor": "Дополнительный цвет",
+    "aperture": "Апертура",
+    "enableAperture": "Включить апертуру курсора",
+    "apertureStyle": "Стиль апертуры",
+    "enableApertureAnimation": "Анимация апертуры",
+    "apertureScale": "Размер апертуры",
+    "effects": {
+      "ripple": "Рябь",
+      "firework": "Фейерверк",
+      "spiral": "Спираль",
+      "circleStroke": "Круг",
+      "rectStroke": "Прямоугольник"
+    },
+    "apertureStyles": {
+      "neon": "Неон",
+      "golden": "Золотой",
+      "aurora": "Аврора",
+      "fire": "Огонь",
+      "frost": "Иней",
+      "rainbow": "Радуга",
+      "shadow": "Тень",
+      "sparkle": "Искры",
+      "firefly": "Светлячок",
+      "ripple": "Рябь",
+      "spinner": "Спиннер",
+      "swirl": "Вихрь",
+      "ray": "Луч"
+    },
+    "messages": {
+      "enabled": "Эффект клика включён",
+      "disabled": "Эффект клика отключён",
+      "typeChanged": "Эффект клика изменён на {{type}}",
+      "scaleUpdated": "Масштаб обновлён",
+      "speedUpdated": "Скорость обновлена",
+      "primaryColorUpdated": "Основной цвет обновлён",
+      "secondaryColorUpdated": "Дополнительный цвет обновлён",
+      "saveFailed": "Не удалось сохранить настройки",
+      "loadFailed": "Не удалось загрузить настройки",
+      "vipOnly": "Тип эффекта клика — VIP-функция",
+      "apertureEnabled": "Апертура курсора включена",
+      "apertureDisabled": "Апертура курсора отключена",
+      "apertureStyleChanged": "Стиль апертуры изменён на {{style}}",
+      "apertureAnimationEnabled": "Анимация апертуры включена",
+      "apertureAnimationDisabled": "Анимация апертуры отключена",
+      "apertureSizeUpdated": "Размер апертуры обновлён"
+    }
+  },
+  "keyboard": {
+    "title": "Настройки клавиатуры",
+    "enableKeyboardEcho": "Включить отображение клавиш",
+    "enableClickEcho": "Включить отображение кликов",
+    "scale": "Масштаб",
+    "offsetX": "Смещение X",
+    "offsetY": "Смещение Y",
+    "fgColor": "Цвет текста",
+    "bgColor": "Цвет фона",
+    "messages": {
+      "keyboardEnabled": "Отображение клавиш включено",
+      "keyboardDisabled": "Отображение клавиш отключено",
+      "clickEnabled": "Отображение кликов включено",
+      "clickDisabled": "Отображение кликов отключено",
+      "fgColorUpdated": "Цвет текста обновлён",
+      "bgColorUpdated": "Цвет фона обновлён",
+      "saveFailed": "Не удалось сохранить настройки",
+      "loadFailed": "Не удалось загрузить настройки",
+      "fgColorVipOnly": "Настройка цвета текста — VIP-функция",
+      "bgColorVipOnly": "Настройка цвета фона — VIP-функция"
+    }
+  },
+  "drawing": {
+    "title": "Настройки рисования",
+    "toggleMode": "Переключить режим рисования",
+    "clearAnnotation": "Очистить аннотации",
+    "shortcutHelp": "Справка по горячим клавишам",
+    "toolbarShortcut": "Горячая клавиша панели",
+    "messages": {
+      "shortcutUpdated": "Горячая клавиша установлена: {{shortcut}}",
+      "saveFailed": "Не удалось сохранить настройки: {{error}}",
+      "loadFailed": "Не удалось загрузить настройки",
+      "enterDrawMode": "Режим рисования включён",
+      "exitDrawMode": "Режим рисования отключён",
+      "toolbarShown": "Панель показана ({{shortcut}} переключить)",
+      "toolbarHidden": "Панель скрыта ({{shortcut}} восстановить)"
+    }
+  },
+  "general": {
+    "title": "Системные настройки",
+    "permissionTitle": "Настройки разрешений",
+    "autoStart": "Автозапуск",
+    "theme": "Тема",
+    "themeLight": "Светлая",
+    "themeDark": "Тёмная",
+    "themeAuto": "Авто",
+    "language": "Язык / Language",
+    "accessibilityPermission": "Разрешение универсального доступа",
+    "inputMonitoringPermission": "Разрешение мониторинга ввода",
+    "authorized": "Разрешено",
+    "requestPermission": "Запросить разрешение",
+    "messages": {
+      "autoStartEnabled": "Автозапуск включён",
+      "autoStartDisabled": "Автозапуск отключён",
+      "autoStartFailed": "Не удалось настроить автозапуск",
+      "saveFailed": "Не удалось сохранить настройки",
+      "themeUpdated": "Тема изменена на {{theme}}",
+      "grantAccessibilityPermission": "Пожалуйста, предоставьте разрешение универсального доступа в Системных настройках",
+      "grantInputMonitoringPermission": "Пожалуйста, предоставьте разрешение мониторинга ввода в Системных настройках",
+      "requestPermissionFailed": "Не удалось запросить разрешение"
+    }
+  },
+  "activation": {
+    "title": "Центр участников",
+    "subtitle": {
+      "vip": "Пользуйтесь всеми VIP-привилегиями",
+      "normal": "Активируйте членство, чтобы разблокировать все функции"
+    },
+    "status": "Текущий статус",
+    "vipMember": "Пожизненный VIP",
+    "normalVersion": "Бесплатная версия",
+    "benefits": "Ваши VIP-преимущества",
+    "benefitList": {
+      "noWatermark": "Без водяного знака",
+      "advancedClickEffect": "Продвинутые эффекты клика",
+      "advancedKeyboard": "Продвинутые эффекты клавиатуры"
+    },
+    "upgradeHint": "Активируйте членство, чтобы разблокировать больше функций",
+    "redeemTitle": "Активация по коду",
+    "getCodeHint": "Нет кода активации? Посетите",
+    "bilibiliPage": "BiliBili",
+    "getCode": "чтобы получить код",
+    "codeLabel": "Код активации",
+    "codePlaceholder": "Введите код активации",
+    "activateButton": "Активировать",
+    "messages": {
+      "emptyCode": "Пожалуйста, введите код активации",
+      "success": "Активация успешна! Теперь вы VIP-участник.",
+      "invalidCode": "Недействительный код активации"
+    }
+  },
+  "about": {
+    "version": "Версия {{version}}",
+    "officialAccount": "Официальный аккаунт",
+    "visitWebsite": "Посетить сайт",
+    "contactUs": "Связаться с нами",
+    "copySystemInfo": "Информация о системе",
+    "copySuccess": "Информация о системе скопирована в буфер обмена",
+    "copyFailed": "Не удалось скопировать, попробуйте снова",
+    "copyright": "© {{year}} FioFio Studio. Все права защищены."
+  },
+  "tray": {
+    "preferences": "Настройки",
+    "resetWindow": "Сбросить окно",
+    "website": "GitHub",
+    "version": "Версия {{version}}",
+    "restart": "Перезапустить",
+    "quit": "Выход"
+  },
+  "keys": {
+    "kp0": "NumPad 0",
+    "kp1": "NumPad 1",
+    "kp2": "NumPad 2",
+    "kp3": "NumPad 3",
+    "kp4": "NumPad 4",
+    "kp5": "NumPad 5",
+    "kp6": "NumPad 6",
+    "kp7": "NumPad 7",
+    "kp8": "NumPad 8",
+    "kp9": "NumPad 9",
+    "kpDelete": "NumPad .",
+    "kpDivide": "NumPad /",
+    "kpMultiply": "NumPad *",
+    "kpMinus": "NumPad -",
+    "kpPlus": "NumPad +",
+    "leftClick": "ЛКМ",
+    "middleClick": "СКМ",
+    "rightClick": "ПКМ"
+  }
+}

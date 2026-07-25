@@ -68,7 +68,7 @@ export interface DrawingSettings {
 // 应用设置接口
 export interface AppSettings {
     theme?: 'light' | 'dark' | 'auto';
-    language?: 'zh-CN' | 'zh-TW' | 'en-US' | 'ja-JP' | 'ko-KR' | 'fr-FR' | 'de-DE' | 'es-ES';
+    language?: 'zh-CN' | 'zh-TW' | 'en-US' | 'ja-JP' | 'ko-KR' | 'fr-FR' | 'de-DE' | 'es-ES' | 'ru-RU' | 'hi-IN';
     autoStart?: boolean;
     minimizeToTray?: boolean;
     // 鼠标设置

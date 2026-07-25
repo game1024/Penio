@@ -34,6 +34,8 @@ import koKR from './locales/ko-KR.json';
 import frFR from './locales/fr-FR.json';
 import deDE from './locales/de-DE.json';
 import esES from './locales/es-ES.json';
+import ruRU from './locales/ru-RU.json';
+import hiIN from './locales/hi-IN.json';
 
 // 将系统语言代码映射到应用支持的语言
 const mapSystemLocaleToAppLanguage = (systemLocale: string): string => {
@@ -41,7 +43,7 @@ const mapSystemLocaleToAppLanguage = (systemLocale: string): string => {
   const normalized = systemLocale.replace('_', '-');
   
   // 支持的语言列表
-  const supportedLanguages = ['zh-CN', 'zh-TW', 'en-US', 'ja-JP', 'ko-KR', 'fr-FR', 'de-DE', 'es-ES'];
+  const supportedLanguages = ['zh-CN', 'zh-TW', 'en-US', 'ja-JP', 'ko-KR', 'fr-FR', 'de-DE', 'es-ES', 'ru-RU', 'hi-IN'];
   
   // 完全匹配
   if (supportedLanguages.includes(normalized)) {
@@ -62,6 +64,8 @@ const mapSystemLocaleToAppLanguage = (systemLocale: string): string => {
     'fr': 'fr-FR',
     'de': 'de-DE',
     'es': 'es-ES',
+    'ru': 'ru-RU',
+    'hi': 'hi-IN',
   };
   
   return languageMap[langCode] || 'zh-CN';
@@ -120,6 +124,12 @@ i18n
       },
       'es-ES': {
         translation: esES
+      },
+      'ru-RU': {
+        translation: ruRU
+      },
+      'hi-IN': {
+        translation: hiIN
       }
     },
     lng: 'zh-CN', // 先使用默认语言
