@@ -172,6 +172,12 @@
     "restart": "재시작",
     "quit": "종료"
   },
+  "shortcut": {
+    "pressKeys": "단축키 입력",
+    "notSet": "설정 안 됨",
+    "winKeyNotSupported": "Win 키는 단축키로 지원되지 않습니다",
+    "metaKeyNotSupported": "Meta 키는 단축키로 지원되지 않습니다"
+  },
   "keys": {
     "kp0": "NumPad 0",
     "kp1": "NumPad 1",

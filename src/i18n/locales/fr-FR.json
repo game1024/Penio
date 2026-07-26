@@ -172,6 +172,12 @@
     "restart": "Redémarrer",
     "quit": "Quitter"
   },
+  "shortcut": {
+    "pressKeys": "Appuyez sur les touches",
+    "notSet": "Non défini",
+    "winKeyNotSupported": "La touche Win n'est pas prise en charge",
+    "metaKeyNotSupported": "La touche Meta n'est pas prise en charge"
+  },
   "keys": {
     "kp0": "NumPad 0",
     "kp1": "NumPad 1",

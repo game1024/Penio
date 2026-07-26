@@ -172,6 +172,12 @@
     "restart": "再起動",
     "quit": "終了"
   },
+  "shortcut": {
+    "pressKeys": "キーを押してください",
+    "notSet": "未設定",
+    "winKeyNotSupported": "Winキーはショートカットとして使用できません",
+    "metaKeyNotSupported": "Metaキーはショートカットとして使用できません"
+  },
   "keys": {
     "kp0": "NumPad 0",
     "kp1": "NumPad 1",

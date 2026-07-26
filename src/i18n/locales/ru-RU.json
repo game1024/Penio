@@ -172,6 +172,12 @@
     "restart": "Перезапустить",
     "quit": "Выход"
   },
+  "shortcut": {
+    "pressKeys": "Нажмите клавиши",
+    "notSet": "Не задано",
+    "winKeyNotSupported": "Клавиша Win не поддерживается",
+    "metaKeyNotSupported": "Клавиша Meta не поддерживается"
+  },
   "keys": {
     "kp0": "NumPad 0",
     "kp1": "NumPad 1",

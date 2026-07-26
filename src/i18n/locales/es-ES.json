@@ -170,6 +170,12 @@
     "restart": "Reiniciar",
     "quit": "Salir"
   },
+  "shortcut": {
+    "pressKeys": "Presione las teclas",
+    "notSet": "No establecido",
+    "winKeyNotSupported": "La tecla Win no es compatible",
+    "metaKeyNotSupported": "La tecla Meta no es compatible"
+  },
   "keys": {
     "kp0": "NumPad 0",
     "kp1": "NumPad 1",

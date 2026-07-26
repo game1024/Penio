@@ -28,6 +28,7 @@ import { KeyComboTag } from "@blueprintjs/core";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import { platform } from '@tauri-apps/plugin-os';
 import { useSnackbar } from "../contexts/SnackbarContext";
+import { useTranslation } from 'react-i18next';
 import ClearIcon from '@mui/icons-material/Clear';
 
 interface ShortcutFieldProps {
@@ -42,6 +43,7 @@ export default function ShortcutField({ value, onChange, disable = false, minWid
     const [currentCombo, setCurrentCombo] = useState('');
     const [isHovered, setIsHovered] = useState(false);
     const { notify } = useSnackbar();
+    const { t } = useTranslation();
     const inputRef = useRef<HTMLDivElement>(null);
 
     // 处理快捷键输入
@@ -63,13 +65,13 @@ export default function ShortcutField({ value, onChange, disable = false, minWid
         if (event.metaKey) {
             switch (os) {
                 case 'windows':
-                    notify('不支持使用 Win 键作为快捷键', 'warning');
+                    notify(t('shortcut.winKeyNotSupported'), 'warning');
                     return;
                 case 'macos':
                     keys.push('Command');
                     break;
                 case 'linux':
-                    notify('不支持使用 Meta 键作为快捷键', 'warning');
+                    notify(t('shortcut.metaKeyNotSupported'), 'warning');
                     break;
             }
         }
@@ -165,13 +167,13 @@ export default function ShortcutField({ value, onChange, disable = false, minWid
         if (event.metaKey) {
             switch (os) {
                 case 'windows':
-                    notify('不支持使用 Win 键作为快捷键', 'warning');
+                    notify(t('shortcut.winKeyNotSupported'), 'warning');
                     return;
                 case 'macos':
                     keys.push('Command');
                     break;
                 case 'linux':
-                    notify('不支持使用 Meta 键作为快捷键', 'warning');
+                    notify(t('shortcut.metaKeyNotSupported'), 'warning');
                     break;
             }
         }
@@ -257,7 +259,7 @@ export default function ShortcutField({ value, onChange, disable = false, minWid
                         </Box>
                     ) : (
                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                            <KeyComboTag combo="按下快捷键" />
+                            <KeyComboTag combo={t('shortcut.pressKeys')} />
                         </Box>
                     )}
                 </Box>
@@ -276,7 +278,7 @@ export default function ShortcutField({ value, onChange, disable = false, minWid
                 ) : (
                     <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', gap: 0.5 }}>
                             <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                                <KeyComboTag combo={"未设置"} />
+                                <KeyComboTag combo={t('shortcut.notSet')} />
                             </Box>
                     </Box>
                 )

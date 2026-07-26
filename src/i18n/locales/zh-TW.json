@@ -169,6 +169,12 @@
     "version": "版本 {{version}}",
     "restart": "重新啟動應用程式",
     "quit": "結束"  },
+  "shortcut": {
+    "pressKeys": "按下快捷鍵",
+    "notSet": "未設定",
+    "winKeyNotSupported": "不支援使用 Win 鍵作為快捷鍵",
+    "metaKeyNotSupported": "不支援使用 Meta 鍵作為快捷鍵"
+  },
   "keys": {
     "kp0": "小鍵盤0",
     "kp1": "小鍵盤1",

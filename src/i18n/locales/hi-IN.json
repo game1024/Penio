@@ -172,6 +172,12 @@
     "restart": "पुनः आरंभ करें",
     "quit": "बाहर निकलें"
   },
+  "shortcut": {
+    "pressKeys": "कुंजियाँ दबाएँ",
+    "notSet": "सेट नहीं",
+    "winKeyNotSupported": "Win कुंजी समर्थित नहीं है",
+    "metaKeyNotSupported": "Meta कुंजी समर्थित नहीं है"
+  },
   "keys": {
     "kp0": "नमपैड 0",
     "kp1": "नमपैड 1",

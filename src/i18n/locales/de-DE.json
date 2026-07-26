@@ -170,6 +170,12 @@
     "restart": "Neustart",
     "quit": "Beenden"
   },
+  "shortcut": {
+    "pressKeys": "Tasten drücken",
+    "notSet": "Nicht festgelegt",
+    "winKeyNotSupported": "Win-Taste wird nicht unterstützt",
+    "metaKeyNotSupported": "Meta-Taste wird nicht unterstützt"
+  },
   "keys": {
     "kp0": "NumPad 0",
     "kp1": "NumPad 1",
