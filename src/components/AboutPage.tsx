@@ -148,8 +148,32 @@ function 关于页面() {
                 </Box>
             </Box>
 
+            {/* 操作按钮 */}
+            <Stack spacing={2} sx={{ width: '100%' }}>
+                {/* 复制软件信息 */}
+                <Button
+                    variant="outlined"
+                    startIcon={<ContentCopyIcon />}
+                    onClick={handleCopySystemInfo}
+                    sx={{
+                        py: 1.5,
+                        borderRadius: 2,
+                        textTransform: "none",
+                    }}
+                >
+                    {t('about.copySystemInfo')}
+                </Button>
+            </Stack>
+
+            {/* 分割线 */}
+            <Box sx={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+                <Box sx={{ flex: 1, borderTop: 1, borderColor: 'divider' }} />
+                <Typography variant="caption" sx={{ mx: 1.5, color: 'text.secondary' }}>{t('about.socialLinks')}</Typography>
+                <Box sx={{ flex: 1, borderTop: 1, borderColor: 'divider' }} />
+            </Box>
+
             {/* 社交链接图标 */}
-            <Stack direction="row" spacing={2} sx={{ mt: 1 }}>
+            <Stack direction="row" spacing={2}>
                 <Tooltip title="GitHub" arrow>
                     <IconButton
                         onClick={handleGithubClick}
@@ -192,23 +216,6 @@ function 关于页面() {
                     </IconButton>
                 </Tooltip>
 
-            </Stack>
-
-            {/* 操作按钮 */}
-            <Stack spacing={2} sx={{ width: '100%', mt: 2 }}>
-                {/* 复制软件信息 */}
-                <Button
-                    variant="outlined"
-                    startIcon={<ContentCopyIcon />}
-                    onClick={handleCopySystemInfo}
-                    sx={{
-                        py: 1.5,
-                        borderRadius: 2,
-                        textTransform: "none",
-                    }}
-                >
-                    {t('about.copySystemInfo')}
-                </Button>
             </Stack>
         </Box>
     );

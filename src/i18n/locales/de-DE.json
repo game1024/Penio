@@ -158,7 +158,9 @@
     "version": "Version {{version}}",
     "officialAccount": "Offizieller Account",
     "visitWebsite": "Website besuchen",
-    "contactUs": "Kontaktieren Sie uns",    "copySystemInfo": "Systeminformationen",
+    "contactUs": "Kontaktieren Sie uns",
+    "socialLinks": "Soziale Links",
+    "copySystemInfo": "Systeminformationen",
     "copySuccess": "Systeminformationen in die Zwischenablage kopiert",
     "copyFailed": "Kopieren fehlgeschlagen, bitte versuchen Sie es erneut",    "copyright": "© {{year}} FioFio Studio. Alle Rechte vorbehalten."
   },

@@ -158,7 +158,9 @@
     "version": "版本 {{version}}",
     "officialAccount": "官方公眾號",
     "visitWebsite": "造訪官網",
-    "contactUs": "聯絡我們",    "copySystemInfo": "軟體資訊",
+    "contactUs": "聯絡我們",
+    "socialLinks": "社交連結",
+    "copySystemInfo": "軟體資訊",
     "copySuccess": "軟體資訊已複製到剪貼簿",
     "copyFailed": "複製失敗，請重試",    "copyright": "© {{year}} 飛鷗工作室. All rights reserved."
   },

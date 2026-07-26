@@ -181,7 +181,7 @@ function App() {
     <SnackbarProvider>
       <Box sx={{ display: 'flex', flexDirection: 'column', height: '100vh', borderRadius: '8px', overflow: 'hidden' }}>
         {/* 自定义标题栏 */}
-        <Box className="titlebar" sx={{ backgroundColor: 'background.paper' }}>
+        <Box className="titlebar" sx={{ backgroundColor: 'background.paper', borderBottom: 1, borderColor: 'divider' }}>
           <div className="titlebar-title-container">
             <span className="titlebar-title">{t('tabs.console')}</span>
           </div>
@@ -204,7 +204,7 @@ function App() {
           value={tabno}
           onChange={(_, newValue) => setTabno(newValue)}
           orientation="vertical"
-          sx={{ minWidth: '6rem', backgroundColor: 'background.paper' }}>
+          sx={{ minWidth: '6rem', backgroundColor: 'background.paper', borderRight: 1, borderColor: 'divider' }}>
           <Tab value={TabIndex.鼠标} icon={<MouseIcon />} label={t('tabs.mouse')} />
           <Tab value={TabIndex.键盘} icon={<KeyboardIcon />} label={t('tabs.keyboard')} />
           <Tab value={TabIndex.绘图} icon={<BrushIcon />} label={t('tabs.drawing')} />
