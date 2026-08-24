@@ -30,13 +30,10 @@
       "rectStroke": "方形描边"
     },
     "apertureStyles": {
-      "neon": "霓虹",
+      "halo": "纯白",
       "golden": "金色",
       "aurora": "极光",
       "fire": "火焰",
-      "frost": "冰霜",
-      "rainbow": "彩虹",
-      "shadow": "暗影",
       "sparkle": "星芒",
       "firefly": "萤火",
       "ripple": "涟漪",

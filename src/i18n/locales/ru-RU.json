@@ -30,13 +30,10 @@
       "rectStroke": "Прямоугольник"
     },
     "apertureStyles": {
-      "neon": "Неон",
+      "halo": "Ореол",
       "golden": "Золотой",
       "aurora": "Аврора",
       "fire": "Огонь",
-      "frost": "Иней",
-      "rainbow": "Радуга",
-      "shadow": "Тень",
       "sparkle": "Искры",
       "firefly": "Светлячок",
       "ripple": "Рябь",

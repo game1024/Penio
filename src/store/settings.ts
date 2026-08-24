@@ -31,7 +31,7 @@ import { useShortcut } from '../hooks/useShortcut';
 let settingsStore: Store | null = null;
 
 // 光圈样式类型
-export type ApertureStyle = 'neon' | 'golden' | 'aurora' | 'fire' | 'frost' | 'rainbow' | 'shadow' | 'sparkle' | 'firefly' | 'ripple' | 'spinner' | 'swirl' | 'ray';
+export type ApertureStyle = 'halo' | 'golden' | 'aurora' | 'fire' | 'sparkle' | 'firefly' | 'ripple' | 'spinner' | 'swirl' | 'ray';
 
 // 鼠标设置接口
 export interface MouseSettings {
@@ -91,7 +91,7 @@ const defaultSettings: AppSettings = {
         scale: 1.0,
         speed: 1.0,
         enableAperture: true,
-        apertureStyle: 'neon',
+        apertureStyle: 'halo',
         enableApertureAnimation: true,
         apertureScale: 1.0,
     },

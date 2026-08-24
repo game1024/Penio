@@ -4,26 +4,10 @@ import { useMouseSettings } from "../../hooks/useMouseSettings";
 import { getCurrentWindow } from "@tauri-apps/api/window";
 import { LogicalSize } from "@tauri-apps/api/dpi";
 
-type StyleName = "neon" | "golden" | "aurora" | "fire" | "frost" | "rainbow" | "shadow" | "sparkle" | "firefly" | "ripple" | "spinner" | "swirl" | "ray";
+type StyleName = "halo" | "golden" | "aurora" | "fire" | "sparkle" | "firefly" | "ripple" | "spinner" | "swirl" | "ray";
 
 // ── Animated style drawing functions ──────────────────────────────────
 // All functions receive the current size; gradients are computed relative to it.
-
-function drawNeon(ctx: CanvasRenderingContext2D, t: number, s: number) {
-  const cx = s / 2, cy = s / 2, r = s / 2;
-  const pulse = 0.85 + 0.15 * Math.sin(t * 0.002);
-  const shift = 0.02 * Math.sin(t * 0.003);
-  const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
-  g.addColorStop(0, "rgba(0,0,0,0)");
-  g.addColorStop(0.2, "rgba(0,0,0,0)");
-  g.addColorStop(0.35 - shift, `rgba(0,255,255,${0.15 * pulse})`);
-  g.addColorStop(0.5 - shift, `rgba(0,255,255,${0.4 * pulse})`);
-  g.addColorStop(0.65 + shift, `rgba(255,0,255,${0.5 * pulse})`);
-  g.addColorStop(0.8 + shift, `rgba(255,0,255,${0.15 * pulse})`);
-  g.addColorStop(1, "rgba(0,0,0,0)");
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, s, s);
-}
 
 function drawGolden(ctx: CanvasRenderingContext2D, t: number, s: number) {
   const cx = s / 2, cy = s / 2, r = s / 2;
@@ -70,54 +54,6 @@ function drawFire(ctx: CanvasRenderingContext2D, t: number, s: number) {
   g.addColorStop(0.58, `rgba(255,${Math.floor(50 * warmth)},0,${0.6 * flicker})`);
   g.addColorStop(0.72, `rgba(200,0,0,${0.35 * flicker})`);
   g.addColorStop(0.88, `rgba(80,0,0,${0.1 * flicker})`);
-  g.addColorStop(1, "rgba(0,0,0,0)");
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, s, s);
-}
-
-function drawFrost(ctx: CanvasRenderingContext2D, t: number, s: number) {
-  const cx = s / 2, cy = s / 2, r = s / 2;
-  const shimmer = 0.8 + 0.2 * Math.sin(t * 0.002);
-  const wave = 0.02 * Math.cos(t * 0.003);
-  const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
-  g.addColorStop(0, "rgba(0,0,0,0)");
-  g.addColorStop(0.22 + wave, "rgba(0,0,0,0)");
-  g.addColorStop(0.36 + wave, `rgba(190,225,255,${0.3 * shimmer})`);
-  g.addColorStop(0.5, `rgba(140,200,255,${0.55 * shimmer})`);
-  g.addColorStop(0.64 - wave, `rgba(60,160,255,${0.5 * shimmer})`);
-  g.addColorStop(0.78 - wave, `rgba(180,220,255,${0.2 * shimmer})`);
-  g.addColorStop(1, "rgba(0,0,0,0)");
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, s, s);
-}
-
-function drawRainbow(ctx: CanvasRenderingContext2D, t: number, s: number) {
-  const cx = s / 2, cy = s / 2, r = s / 2;
-  const base = t * 0.03;
-  const pulse = 0.85 + 0.15 * Math.sin(t * 0.002);
-  const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
-  g.addColorStop(0, "rgba(0,0,0,0)");
-  g.addColorStop(0.25, "rgba(0,0,0,0)");
-  g.addColorStop(0.38, `hsla(${base % 360},90%,55%,${0.2 * pulse})`);
-  g.addColorStop(0.47, `hsla(${(base + 45) % 360},90%,55%,${0.28 * pulse})`);
-  g.addColorStop(0.56, `hsla(${(base + 90) % 360},90%,55%,${0.28 * pulse})`);
-  g.addColorStop(0.65, `hsla(${(base + 135) % 360},90%,55%,${0.3 * pulse})`);
-  g.addColorStop(0.74, `hsla(${(base + 180) % 360},90%,55%,${0.3 * pulse})`);
-  g.addColorStop(0.83, `hsla(${(base + 225) % 360},90%,55%,${0.18 * pulse})`);
-  g.addColorStop(1, "rgba(0,0,0,0)");
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, s, s);
-}
-
-function drawShadow(ctx: CanvasRenderingContext2D, t: number, s: number) {
-  const cx = s / 2, cy = s / 2, r = s / 2;
-  const breathe = 0.6 + 0.4 * Math.sin(t * 0.0018);
-  const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
-  g.addColorStop(0, "rgba(0,0,0,0)");
-  g.addColorStop(0.3, "rgba(0,0,0,0)");
-  g.addColorStop(0.44, `rgba(255,255,255,${0.06 * breathe})`);
-  g.addColorStop(0.55, `rgba(255,255,255,${0.18 * breathe})`);
-  g.addColorStop(0.66, `rgba(255,255,255,${0.06 * breathe})`);
   g.addColorStop(1, "rgba(0,0,0,0)");
   ctx.fillStyle = g;
   ctx.fillRect(0, 0, s, s);
@@ -495,14 +431,25 @@ function drawRay(ctx: CanvasRenderingContext2D, t: number, s: number) {
 
 type DrawFn = (ctx: CanvasRenderingContext2D, t: number, size: number) => void;
 
+// Halo: pure white circle with soft transparency, gentle breathing pulse
+function drawHalo(ctx: CanvasRenderingContext2D, t: number, s: number) {
+  const cx = s / 2, cy = s / 2, r = s / 2;
+  const breathe = 0.8 + 0.2 * Math.sin(t * 0.0018);
+  const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
+  g.addColorStop(0, `rgba(255,255,255,${0.35 * breathe})`);
+  g.addColorStop(0.35, `rgba(255,255,255,${0.65 * breathe})`);
+  g.addColorStop(0.6, `rgba(255,255,255,${0.55 * breathe})`);
+  g.addColorStop(0.82, `rgba(255,255,255,${0.25 * breathe})`);
+  g.addColorStop(1, "rgba(255,255,255,0)");
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, s, s);
+}
+
 const DRAW_FNS: Record<StyleName, DrawFn> = {
-  neon: drawNeon,
+  halo: drawHalo,
   golden: drawGolden,
   aurora: drawAurora,
   fire: drawFire,
-  frost: drawFrost,
-  rainbow: drawRainbow,
-  shadow: drawShadow,
   sparkle: drawSparkle,
   firefly: drawFirefly,
   ripple: drawRipple,
@@ -517,7 +464,7 @@ const BASE_SIZE = 150;
 
 function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const styleRef = useRef<StyleName>("neon");
+  const styleRef = useRef<StyleName>("halo");
   const sizeRef = useRef<number>(BASE_SIZE);
   const rafRef = useRef<number>(0);
   const { mouseSettings, loading } = useMouseSettings();
@@ -554,7 +501,7 @@ function App() {
     const enabled = mouseSettings.enableAperture !== false;
     if (loading || !enabled) return;
 
-    const style = (mouseSettings.apertureStyle as StyleName) || "neon";
+    const style = (mouseSettings.apertureStyle as StyleName) || "halo";
     styleRef.current = style;
 
     const canvas = canvasRef.current;

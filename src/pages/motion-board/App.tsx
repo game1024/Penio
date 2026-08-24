@@ -161,6 +161,8 @@ function App() {
         if (newState == false) {
           setSnackbar({ open: true, message: '进入绘制模式' });
           setKeyboardPanel(prev => ({ ...prev, modifierKeys: [], keys: [] }));
+          // 进入绘制模式前清空所有标注，得到干净画布
+          excalidrawAPIRef.current?.updateScene({ elements: [] });
           await appWindow.setFocusable(true)
           await appWindow.setIgnoreCursorEvents(newState);
           await appWindow.setFocus();

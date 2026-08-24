@@ -181,7 +181,7 @@ function App() {
     <SnackbarProvider>
       <Box sx={{ display: 'flex', flexDirection: 'column', height: '100vh', borderRadius: '8px', overflow: 'hidden' }}>
         {/* 自定义标题栏 */}
-        <Box className="titlebar" sx={{ backgroundColor: 'background.paper', borderBottom: 1, borderColor: 'divider' }}>
+        <Box data-tauri-drag-region className="titlebar" sx={{ backgroundColor: 'background.paper', borderBottom: 1, borderColor: 'divider' }}>
           <div className="titlebar-title-container">
             <span className="titlebar-title">{t('tabs.console')}</span>
           </div>

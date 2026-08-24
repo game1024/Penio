@@ -30,13 +30,10 @@
       "rectStroke": "आयत"
     },
     "apertureStyles": {
-      "neon": "नियॉन",
+      "halo": "हेलो",
       "golden": "सुनहरा",
       "aurora": "अरोरा",
       "fire": "अग्नि",
-      "frost": "तुषार",
-      "rainbow": "इंद्रधनुष",
-      "shadow": "छाया",
       "sparkle": "चमक",
       "firefly": "जुगनू",
       "ripple": "लहर",

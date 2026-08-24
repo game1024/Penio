@@ -570,7 +570,7 @@ function 鼠标设置页面() {
     const [primaryColorAnchor, setPrimaryColorAnchor] = useState<HTMLElement | null>(null);
     const [secondaryColorAnchor, setSecondaryColorAnchor] = useState<HTMLElement | null>(null);
     const [enableAperture, setEnableAperture] = useState(true);
-    const [apertureStyle, setApertureStyle] = useState<ApertureStyle>('neon');
+    const [apertureStyle, setApertureStyle] = useState<ApertureStyle>('halo');
     const [enableApertureAnimation, setEnableApertureAnimation] = useState(true);
     const [apertureScale, setApertureScale] = useState(1.0);
 
@@ -589,7 +589,7 @@ function 鼠标设置页面() {
                 setPrimaryColor(settings.mouse?.primaryColor ?? 'cyan');
                 setSecondaryColor(settings.mouse?.secondaryColor ?? 'magenta');
                 setEnableAperture(settings.mouse?.enableAperture ?? true);
-                setApertureStyle(settings.mouse?.apertureStyle ?? 'neon');
+                setApertureStyle(settings.mouse?.apertureStyle ?? 'halo');
                 setEnableApertureAnimation(settings.mouse?.enableApertureAnimation ?? true);
                 setApertureScale(settings.mouse?.apertureScale ?? 1.0);
             } catch (error) {
@@ -838,9 +838,8 @@ function 鼠标设置页面() {
     // 处理光圈样式切换
     const handleApertureStyleChange = async (event: any) => {
         const styleMap: Record<number, ApertureStyle> = {
-            0: 'neon', 1: 'golden', 2: 'aurora', 3: 'fire',
-            4: 'frost', 5: 'rainbow', 6: 'shadow', 7: 'sparkle',
-            8: 'firefly', 9: 'ripple', 10: 'spinner', 11: 'swirl', 12: 'ray',
+            0: 'halo', 1: 'golden', 2: 'aurora', 3: 'fire', 4: 'sparkle',
+            5: 'firefly', 6: 'ripple', 7: 'spinner', 8: 'swirl', 9: 'ray',
         };
         const newStyle = styleMap[event.target.value as number];
         setApertureStyle(newStyle);
@@ -865,9 +864,8 @@ function 鼠标设置页面() {
 
     const getApertureStyleValue = () => {
         const valueMap: Record<ApertureStyle, number> = {
-            neon: 0, golden: 1, aurora: 2, fire: 3,
-            frost: 4, rainbow: 5, shadow: 6, sparkle: 7,
-            firefly: 8, ripple: 9, spinner: 10, swirl: 11, ray: 12,
+            halo: 0, golden: 1, aurora: 2, fire: 3, sparkle: 4,
+            firefly: 5, ripple: 6, spinner: 7, swirl: 8, ray: 9,
         };
         return valueMap[apertureStyle];
     };
@@ -1180,19 +1178,16 @@ function 鼠标设置页面() {
                                 }}
                                 sx={{ minWidth: '8rem' }}
                             >
-                                <MenuItem value={0}>{t('mouse.apertureStyles.neon')}</MenuItem>
+                                <MenuItem value={0}>{t('mouse.apertureStyles.halo')}</MenuItem>
                                 <MenuItem value={1}>{t('mouse.apertureStyles.golden')}</MenuItem>
                                 <MenuItem value={2}>{t('mouse.apertureStyles.aurora')}</MenuItem>
                                 <MenuItem value={3}>{t('mouse.apertureStyles.fire')}</MenuItem>
-                                <MenuItem value={4}>{t('mouse.apertureStyles.frost')}</MenuItem>
-                                <MenuItem value={5}>{t('mouse.apertureStyles.rainbow')}</MenuItem>
-                                <MenuItem value={6}>{t('mouse.apertureStyles.shadow')}</MenuItem>
-                                <MenuItem value={7}>{t('mouse.apertureStyles.sparkle')}</MenuItem>
-                                <MenuItem value={8}>{t('mouse.apertureStyles.firefly')}</MenuItem>
-                                <MenuItem value={9}>{t('mouse.apertureStyles.ripple')}</MenuItem>
-                                <MenuItem value={10}>{t('mouse.apertureStyles.spinner')}</MenuItem>
-                                <MenuItem value={11}>{t('mouse.apertureStyles.swirl')}</MenuItem>
-                                <MenuItem value={12}>{t('mouse.apertureStyles.ray')}</MenuItem>
+                                <MenuItem value={4}>{t('mouse.apertureStyles.sparkle')}</MenuItem>
+                                <MenuItem value={5}>{t('mouse.apertureStyles.firefly')}</MenuItem>
+                                <MenuItem value={6}>{t('mouse.apertureStyles.ripple')}</MenuItem>
+                                <MenuItem value={7}>{t('mouse.apertureStyles.spinner')}</MenuItem>
+                                <MenuItem value={8}>{t('mouse.apertureStyles.swirl')}</MenuItem>
+                                <MenuItem value={9}>{t('mouse.apertureStyles.ray')}</MenuItem>
                             </Select>
                         }
                     />

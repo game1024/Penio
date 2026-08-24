@@ -30,6 +30,7 @@
     "core:webview:allow-create-webview-window",
     "core:window:allow-set-position",
     "core:window:allow-set-decorations",
+    "core:window:allow-start-dragging",
     "process:allow-exit",
     "process:allow-restart",
     "shell:allow-open",

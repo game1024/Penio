@@ -45,7 +45,6 @@ html, body {
     flex-shrink: 0;
     border-radius: 8px 8px 0 0;
     position: relative;
-    -webkit-app-region: drag;
 }
 
 .titlebar-title-container {
@@ -67,7 +66,6 @@ html, body {
     position: absolute;
     right: 0;
     top: 0;
-    -webkit-app-region: no-drag;
 }
 
 .titlebar-btn {

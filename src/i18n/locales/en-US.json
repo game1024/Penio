@@ -30,13 +30,10 @@
       "rectStroke": "Rect Stroke"
     },
     "apertureStyles": {
-      "neon": "Neon",
+      "halo": "Halo",
       "golden": "Golden",
       "aurora": "Aurora",
       "fire": "Fire",
-      "frost": "Frost",
-      "rainbow": "Rainbow",
-      "shadow": "Shadow",
       "sparkle": "Sparkle",
       "firefly": "Firefly",
       "ripple": "Ripple",
